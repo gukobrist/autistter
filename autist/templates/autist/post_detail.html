@@ -1,0 +1,11 @@
+{% extends 'autist/base.html' %}
+
+    {% block content %}
+     <div class="post-preview">
+                        <h1 class="post-title">{{ post.title }}</h1>
+            			<p>{{ post.text|linebreaksbr }}</p>
+						{% if post.published_date %}
+                		<p class="post-meta">Опубликовано {{ post.published_date }}</p>
+            			{% endif %}
+     </div>
+    {% endblock %}
