@@ -6,7 +6,7 @@
                             <a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a>
                         </h2>
                         <p>
-                            {{ post.text|linebreaksbr }}
+                            {{ post.text|safe }}
                         </p>
                     <p class="post-meta">Опубликовано {{ post.published_date }}</p>
                 </div>

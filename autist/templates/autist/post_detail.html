@@ -3,9 +3,12 @@
     {% block content %}
      <div class="post-preview">
                         <h1 class="post-title">{{ post.title }} <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a></h1>
-            			<p>{{ post.text|linebreaksbr }}</p>
+            			<p>{{ post.text|safe }}</p>
 						{% if post.published_date %}
                 		<p class="post-meta">Опубликовано {{ post.published_date }}</p>
             			{% endif %}
      </div>
+	<p>
+
+	</p>
     {% endblock %}
