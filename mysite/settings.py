@@ -25,7 +25,7 @@ SECRET_KEY = '@b99vkt-t9n7gwfzo@o-29t(r^+f+ysb%12^4hav+^*!br1vc@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['autister.pythonanywhere.com']
 
 
 # Application definition
@@ -164,7 +164,7 @@ CKEDITOR_CONFIGS = {
                # put the name of your editor.ui.addButton here
                'Preview',
                'Maximize',
- 
+
            ]},
        ],
        'toolbar': 'YourCustomToolbarConfig',  # put selected toolbar config here
