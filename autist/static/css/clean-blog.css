@@ -241,10 +241,9 @@ hr.small {
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
-  color: #777777;
-  font-size: 18px;
-  font-style: italic;
-  margin-top: 0;
+    font-size: 12px;
+    line-height: 20px;
+    color: #757575;
 }
 .post-preview > .post-meta > a {
   text-decoration: none;

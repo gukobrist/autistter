@@ -1,7 +1,12 @@
-	 {% extends 'autist/base.html' %}
+{% extends 'autist/base.html' %}
+{% block title %}
+Новая запись
+{% endblock %}
+{% block subhead %}
+Блог об одноглазом питоне! Пожиратель змей джанго освобожденном 🐍
+{% endblock %}
 
     {% block content %}
-        <h1>Новая запись</h1>
         <form method="POST" class="post-form">{% csrf_token %}
 			 {{ form.media }}
             {{ form.as_p }}

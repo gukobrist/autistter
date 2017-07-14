@@ -41,3 +41,6 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'autist/post_edit.html', {'form': form})
+
+def page_about(request):
+    return render(request, 'autist/about.html');
