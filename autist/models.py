@@ -13,6 +13,10 @@ class Post(models.Model):
             default=timezone.now)
     published_date = models.DateTimeField(
             blank=True, null=True)
+    seo_title = models.CharField('Title', blank=True, max_length=250)
+    seo_description = models.CharField('Description', blank=True, max_length=250)
+    seo_keywords = models.CharField('Keywords', blank=True, max_length=250)
+
 
     def publish(self):
         self.published_date = timezone.now()

@@ -44,3 +44,6 @@ def post_edit(request, pk):
 
 def page_about(request):
     return render(request, 'autist/about.html');
+
+def page_contact(request):
+    return render(request, 'autist/contact.html');

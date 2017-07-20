@@ -8,12 +8,13 @@
 
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	{% block meta_tags %}
-        {% include_meta_tags %}
-    {% endblock %}
+	{% block seoeengeen %}
+	{% endblock %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Установка и настройка Phyton Django</title>
+	{% block meta_tags %}
+    {% include_meta_tags %}
+    {% endblock %}
+    
 
     <!-- Bootstrap Core CSS -->
     <link href="{% static 'vendor/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
@@ -59,10 +60,10 @@
                         <a href="/">Главная</a>
                     </li>
                     <li>
-                        <a href="/about.html">Обо мне</a>
+                        <a href="/about/">Обо мне</a>
                     </li>
                     <li>
-                        <a href="contact.html">Написать мне</a>
+                        <a href="/contact/">Написать мне</a>
                     </li>
 					<li>
 						{% if user.is_authenticated %}
@@ -83,7 +84,7 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
                         <h1>
-							{% block title %}
+							{% block h1 %}
 							{% endblock %}
 						</h1>
                         <hr class="small">
