@@ -18,11 +18,23 @@
                     <p class="post-meta">Опубликовано {{ post.published_date }}</p>
                 </div>
                 {% endfor %}
-				<ul class="pager">
-                    <li class="next">
-                        <a href="#">Раньше &rarr;</a>
-                    </li>
-                </ul>
-                <hr>
+<ul class="pager">
+	<li class="next">
+        {% if posts.has_next %}
+            <a href="?page={{ posts.next_page_number }}">Позже</a>
+        {% endif %}
+
+        <span class="current">
+            Страница {{ posts.number }} из {{ posts.paginator.num_pages }}.
+        </span>
+
+        
+		
+		{% if posts.has_previous %}
+            <a href="?page={{ posts.previous_page_number }}">Раньше</a>
+        {% endif %}
+    </li>
+</ul>
+<hr>
 	 {% endblock %}
                 

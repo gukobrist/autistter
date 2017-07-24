@@ -4,12 +4,27 @@ from .models import Post
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 from django.shortcuts import redirect
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 # Create your views here.
 
 def post_list(request):
-    posts = Post.objects.filter(created_date__lte=timezone.now()).order_by('-created_date')
-    return render(request, 'autist/post_list.html', {'posts': posts})
+    posts = Post.objects.filter(created_date__lte=timezone.now()).order_by('-created_date') #собираем все посты
+    
+    paginator = Paginator(posts, 10) # на странице будет по 10 постов
+
+    page = request.GET.get('page')
+    try:
+		# Если существует, то выбираем эту страницу
+        post = paginator.page(page)
+    except PageNotAnInteger:
+        # Если None, то выбираем первую страницу
+        post = paginator.page(1)
+    except EmptyPage:
+        # Если вышли за последнюю страницу, то возвращаем последнюю
+        post = paginator.page(paginator.num_pages)
+
+    return render(request, 'autist/post_list.html', {'posts': post})
 
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
