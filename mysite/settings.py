@@ -25,7 +25,7 @@ SECRET_KEY = '@b99vkt-t9n7gwfzo@o-29t(r^+f+ysb%12^4hav+^*!br1vc@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['autister.pythonanywhere.com']
 
 
 # Application definition
