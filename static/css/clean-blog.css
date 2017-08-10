@@ -4,8 +4,8 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
-  font-size: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
   color: #333333;
 }
 p {
@@ -21,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 800;
 }
 a {
@@ -241,10 +241,9 @@ hr.small {
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
-  color: #777777;
-  font-size: 18px;
-  font-style: italic;
-  margin-top: 0;
+    font-size: 12px;
+    line-height: 20px;
+    color: #757575;
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
