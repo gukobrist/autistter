@@ -52,7 +52,7 @@ def post_edit(request, slug):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('post_detail', slug=post.pk)
+            return redirect('post_detail', slug=post.slug)
     else:
         form = PostForm(instance=post)
     return render(request, 'autist/post_edit.html', {'form': form})
