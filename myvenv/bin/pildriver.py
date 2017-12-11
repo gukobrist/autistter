@@ -1,4 +1,4 @@
-#!/home/romashov/site/myvenv/bin/python3
+#!/home/autister/autistter/myvenv/bin/python3.6
 """PILdriver, an image-processing calculator using PIL.
 
 An instance of class PILDriver is essentially a software stack machine
