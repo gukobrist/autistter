@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Django settings for mysite project.
 
@@ -207,7 +208,6 @@ CKEDITOR_CONFIGS = {
        ],
        'toolbar': 'YourCustomToolbarConfig',  # put selected toolbar config here
 
-       # 'toolbarGroups': [{ ‘name’: ‘document’, ‘groups’: [ 'mode', 'document', 'doctools' ] }],
        # 'height': 291,
        # 'width': '100%',
        # 'filebrowserWindowHeight': 725,

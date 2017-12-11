@@ -19,7 +19,6 @@ parse==1.8.2
 parse-type==0.3.4
 pbr==3.1.1
 Pillow==4.2.0
-pkg-resources==0.0.0
 python-slugify==1.2.4
 python3-openid==3.1.0
 pytz==2017.2
