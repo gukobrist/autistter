@@ -1,6 +1,7 @@
 {% load staticfiles %}
 {{ article.get_short_text | safe }}
 {% load meta_tags %}
+
 <!DOCTYPE html>
 <html lang="ru" >
 
@@ -72,7 +73,7 @@
 						{% endif %}
 					</li>
                     <li>
-                        <a href="{{ login_url }}">sign in</a>
+                        <a href="{{ login_url }}">Войти</a>
                     </li>
 
                 </ul>
