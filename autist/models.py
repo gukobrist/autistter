@@ -59,7 +59,7 @@ class UserProfile(models.Model):
         if len(fb_uid):
             return "http://graph.facebook.com/{}/picture?width=40&height=40".format(fb_uid[0].uid)
 
-        return "http://www.gravatar.com/avatar/{}?s=40".format(hashlib.md5(self.user.email).hexdigest())
+        return "http://www.gravatar.com/avatar/{}?s=40".format(hashlib.md5(self.user.email).hexdigest().encode('utf-8'))
 
 
 User.profile = property(lambda u: UserProfile.objects.get_or_create(user=u)[0])
