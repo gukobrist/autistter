@@ -1,5 +1,8 @@
- {% extends 'autist/base.html' %}
-
+{% extends 'autist/base.html' %}
+{% load staticfiles %}
+{% block headimg %}
+<header class="intro-header" style="background-image: url({% static 'blog/img/post-bg.jpg' %})">
+{% endblock %}
 {% block h1 %}
 Обо мне
 {% endblock %}

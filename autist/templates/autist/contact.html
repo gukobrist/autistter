@@ -1,16 +1,19 @@
- {% extends 'autist/base.html' %}
-
+{% extends 'autist/base.html' %}
+{% load staticfiles %}
+{% block headimg %}
+<header class="intro-header" style="background-image: url({% static 'blog/img/post-sample-image.jpg' %})">
+{% endblock %}
 {% block h1 %}
 Написать мне
 {% endblock %}
 {% block subhead %}
-Блог об одноглазом питоне! Пожиратель змей джанго освобожденном 🐍
+Есть вопросы? У меня есть ответы.
 {% endblock %}
 
 {% block content %}
 <div class="post-preview">
             
-                <p>Хотите связаться со мной по любому вопросу? Пиши мне в <a href="https://twitter.com/gukobrist">twitter</a> или через эту форму</p>
+                <p>Хотите связаться со мной по любому вопросу? Пиши мне в <a href="https://twitter.com/autistter">twitter</a> или через эту форму</p>
                 <form name="sentMessage" id="contactForm" novalidate>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">

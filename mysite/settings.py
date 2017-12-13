@@ -61,7 +61,7 @@ LOGIN_REDIRECT_URL = "/"
 LOGOUT_URL = "/accounts/login/"
 
 ACCOUNT_SIGNUP_FORM_CLASS = 'autist.forms.SignupForm'
-
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 SOCIALACCOUNT_QUERY_EMAIL = False
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_USERNAME_REQUIRED = False

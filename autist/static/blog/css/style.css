@@ -1,0 +1,24 @@
+
+.post-preview {	
+	display: block;
+    padding: 16px;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.04);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.04);
+    -webkit-transition: box-shadow .3s ease-in-out;
+    transition: box-shadow .3s ease-in-out;
+    background-color: #fff;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    outline: none;
+	margin-bottom: 8px;
+}
+
+body {
+	background-color: #f7f7f7;
+}
+	
+.post-meta {
+	font-size: 12px;
+    line-height: 20px;
+    color: #757575;
+}
