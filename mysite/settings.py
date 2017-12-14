@@ -63,10 +63,7 @@ LOGOUT_URL = "/accounts/login/"
 ACCOUNT_SIGNUP_FORM_CLASS = 'autist.forms.SignupForm'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 SOCIALACCOUNT_QUERY_EMAIL = False
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_USERNAME_REQUIRED = False
-ACCOUNT_AUTHENTICATION_METHOD = 'email'
-ACCOUNT_LOGIN_ATTEMPTS_TIMEOUT = 60
+
 
 SOCIALACCOUNT_PROVIDERS = {
     'facebook': {
