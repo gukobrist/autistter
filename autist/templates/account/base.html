@@ -1,6 +1,36 @@
+{% load staticfiles %}
+{{ article.get_short_text | safe }}
 <!DOCTYPE html>
 <html>
   <head>
+      <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="google-site-verification" content="i9vj5aOg37RBJ5O6dha6b9upqtjvh1It-TqKejZj0zw" />
+	{% block seoeengeen %}
+	{% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'blog/vendor/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="{% static 'blog/css/clean-blog.css' %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{% static 'blog/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+	<link href="{% static 'blog/css/style.css' %}" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <title>{% block head_title %}{% endblock %}</title>
     {% block extra_head %}
     {% endblock %}
@@ -36,5 +66,23 @@
     {% endblock %}
     {% block extra_body %}
     {% endblock %}
+
+    <!-- jQuery -->
+    <script src="{% static 'blog/vendor/jquery/jquery.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'blog/vendor/bootstrap/js/bootstrap.js' %}"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="{% static 'blog/js/jqBootstrapValidation.js' %}"></script>
+    <script src="{% static 'blog/js/contact_me.js' %}"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="{% static 'blog/js/clean-blog.js' %}"></script>
+	<!-- DISQUS -->
+	<script id="dsq-count-scr" src="//autister.disqus.com/count.js" async></script>
+    <!-- Share Buttons -->
+    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=59786357e29218001169f76f&product=inline-share-buttons"></script>
+
   </body>
 </html>

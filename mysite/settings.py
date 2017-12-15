@@ -59,10 +59,9 @@ SITE_ID = 1
 
 LOGIN_REDIRECT_URL = "/"
 LOGOUT_URL = "/accounts/login/"
-
-ACCOUNT_SIGNUP_FORM_CLASS = 'autist.forms.SignupForm'
+ACCOUNT_EMAIL_REQUIRED = True
+#ACCOUNT_SIGNUP_FORM_CLASS = 'autist.forms.SignupForm'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-SOCIALACCOUNT_QUERY_EMAIL = False
 
 
 SOCIALACCOUNT_PROVIDERS = {
@@ -95,12 +94,13 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'), os.path.join(BASE_DIR, 'templates', 'allauth')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
+                'django.template.context_processors.media',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
 

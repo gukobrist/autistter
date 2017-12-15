@@ -6,12 +6,13 @@ class PostForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = ('title', 'text',)
-
+"""
 class SignupForm(forms.Form):
-    first_name = forms.CharField(max_length=30, label='Voornaam')
-    last_name = forms.CharField(max_length=30, label='Achternaam')
+    first_name = forms.CharField(max_length=30, label='12')
+    last_name = forms.CharField(max_length=30, label='12')
 
     def signup(self, request, user):
         user.first_name = self.cleaned_data['first_name']
         user.last_name = self.cleaned_data['last_name']
         user.save()
+"""

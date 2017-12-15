@@ -1,7 +1,8 @@
 {% load staticfiles %}
 {{ article.get_short_text | safe }}
 {% load meta_tags %}
-{% load socialaccount %}
+{% load i18n %}
+
 
 <!DOCTYPE html>
 <html lang="ru" >
@@ -79,7 +80,9 @@
     {% if request.user.profile.account_verified %} (подтвержден) {% else %} (неподтвержден) {% endif %}
 
                         {% else %}
-                            <a href="/accounts/login">Войти</a>{% endif %}
+                            <a href="/accounts/login">Войти</a>
+                        <a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+                        {% endif %}
                     </li>
 
                 </ul>
@@ -88,6 +91,7 @@
         </div>
         <!-- /.container -->
     </nav>
+
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
 {% block headimg %}
@@ -116,7 +120,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-				{% block content %}
+				{% block content1 %}
                 {% endblock %}
 
             </div>
@@ -191,6 +195,31 @@
 	</script>
 	<noscript><div><img src="https://mc.yandex.ru/watch/45579465" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 	<!-- /Yandex.Metrika counter -->
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	                        <div class="modal-dialog">
+				                    <div class="loginmodal-container">
+					                    <h1>Войти</h1><br>
+                                        <form>
+					                        <input type="text" name="user" placeholder="Username">
+					                        <input type="password" name="pass" placeholder="Password">
+					                        <input type="submit" name="login" class="login loginmodal-submit" value="Войти">
+				                        </form>
+                                        <h1>Зарегистрироваться</h1><br>
+                                        <form>
+					                        <input type="text" name="user" placeholder="Username">
+                                            <input type="text" name="user" placeholder="Email">
+					                        <input type="password" name="pass" placeholder="Password">
+                                            <input type="password" name="pass" placeholder="Password (again)">
+					                        <input type="submit" name="login" class="login loginmodal-submit" value="Регистрация">
+				                        </form>
+				                    <div class="login-help">
+					                    <a href="#">Забыл пароль</a>
+				                    </div>
+
+				                    </div>
+			                    </div>
+                            </div>
 </body>
 
 </html>
