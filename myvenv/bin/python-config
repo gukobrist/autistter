@@ -1,4 +1,4 @@
-#!/home/autister/autistter/myvenv/bin/python
+#!/home/romashov/site/myvenv/bin/python
 
 import sys
 import getopt

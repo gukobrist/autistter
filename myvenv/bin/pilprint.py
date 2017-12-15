@@ -1,4 +1,4 @@
-#!/home/autister/autistter/myvenv/bin/python3.6
+#!/home/romashov/site/myvenv/bin/python3.5
 #
 # The Python Imaging Library.
 # $Id$
