@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from django.shortcuts import render
 from django.utils import timezone
 from .models import Post
 from django.shortcuts import render, get_object_or_404
@@ -63,3 +62,4 @@ def page_about(request):
 
 def page_contact(request):
     return render(request, 'autist/contact.html');
+

@@ -81,7 +81,11 @@
 
                         {% else %}
                             <a href="/accounts/login">Войти</a>
-                        <a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+                        <!—Ссылка на модальное окно -->
+<a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+
+
+
                         {% endif %}
                     </li>
 
@@ -195,8 +199,7 @@
 	</script>
 	<noscript><div><img src="https://mc.yandex.ru/watch/45579465" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 	<!-- /Yandex.Metrika counter -->
-{% block sign_in_modal %}
-{% endblock %}
+{% include 'autist/sign_in_modal.html'%}
 
 </body>
 

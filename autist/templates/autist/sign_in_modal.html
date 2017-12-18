@@ -1,5 +1,4 @@
-{% extends 'autist/base.html' %}
-{% block sign_in_modal %}
+<!—Само модальное окно -->
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
     <div class="modal-dialog">
 		<div class="loginmodal-container">
@@ -10,6 +9,7 @@
 				<input type="submit" name="login" class="login loginmodal-submit" value="Войти">
 			</form>
             <h1>Зарегистрироваться</h1><br>
+
             <form>
 				<input type="text" name="user" placeholder="Username">
                 <input type="text" name="user" placeholder="Email">
@@ -23,5 +23,5 @@
 
         </div>
     </div>
+    {% include 'account/login.html'%}
 </div>
-{% endblock %}
