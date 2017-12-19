@@ -57,7 +57,7 @@ INSTALLED_APPS = [
 
 SITE_ID = 1
 
-LOGIN_REDIRECT_URL = "/"
+LOGIN_REDIRECT_URL = "/accounts/social/connections/"
 LOGOUT_URL = "/accounts/login/"
 ACCOUNT_EMAIL_REQUIRED = True
 #ACCOUNT_SIGNUP_FORM_CLASS = 'autist.forms.SignupForm'

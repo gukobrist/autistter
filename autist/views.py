@@ -62,4 +62,3 @@ def page_about(request):
 
 def page_contact(request):
     return render(request, 'autist/contact.html');
-

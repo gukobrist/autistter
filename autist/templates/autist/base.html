@@ -81,7 +81,7 @@
                         {% if request.user.first_name or request.user.last_name %}
                             {{ request.user.first_name }} {{ request.user.last_name }}
                         {% else %}
-                            {{ request.user.username }}
+                        <strong>{{ request.user.username }}</strong>
                         {% endif %}
     {% if request.user.profile.account_verified %} (подтвержден) {% else %} (неподтвержден) {% endif %}
 

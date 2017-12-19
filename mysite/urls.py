@@ -6,7 +6,6 @@ from . import settings
 admin.autodiscover()
 
 urlpatterns = [
-
 	url(r'^accounts/', include('allauth.urls')),
 	url(r'', include('autist.urls')),
 	url(r'^ckeditor/', include('ckeditor_uploader.urls')),
