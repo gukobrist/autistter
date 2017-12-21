@@ -53,10 +53,11 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.odnoklassniki',
     'allauth.socialaccount.providers.instagram',
     'avatar',
-
+    'bootstrapform',
     'braces',
     'django_forms_bootstrap',
     'bootstrap3',
+    'userprofiles',
 ]
 
 SITE_ID = 1
@@ -66,6 +67,12 @@ LOGOUT_URL = "/accounts/logout/"
 ACCOUNT_EMAIL_REQUIRED = True
 #ACCOUNT_SIGNUP_FORM_CLASS = 'autist.forms.SignupForm'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+ACCOUNT_EMAIL_VERIFICATION = 'optional'
+SOCIALACCOUNT_EMAIL_REQUIRED = False
+SOCIALACCOUNT_EMAIL_VERIFICATION  = False
+ACCOUNT_PASSWORD_MIN_LENGTH = 8
+ACCOUNT_EMAIL_CONFIRMATION_ANONYMOUS_REDIRECT_URL = '/'
+ACCOUNT_EMAIL_CONFIRMATION_AUTHENTICATED_REDIRECT_URL = '/account/'
 
 
 SOCIALACCOUNT_PROVIDERS = {

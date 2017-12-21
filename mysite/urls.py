@@ -7,9 +7,9 @@ admin.autodiscover()
 
 urlpatterns = [
 	url(r'^accounts/', include('allauth.urls')),
-	url(r'', include('autist.urls')),
 	url(r'^avatar/', include('avatar.urls')),
-	url(r'^profile/', include('autist.urls')),
+	url(r'^profile/', include('userprofiles.urls')),
+	url(r'', include('autist.urls')),
 	url(r'^ckeditor/', include('ckeditor_uploader.urls')),
 	url(r'^admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
