@@ -7,17 +7,17 @@ import hashlib
 from allauth.socialaccount.models import SocialAccount
 
 
-GENDER =(('man','Man'),('woman','Woman'),('трап','Трап'))
+GENDER =(('мужчина','Мужчина'),('женщина','Женщина'),('трап','Трап'))
 
 
 class UserProfile(models.Model):  
     user = models.OneToOneField(User, null=True, related_name="profile", verbose_name=_(u'User'))
-    phone = models.PositiveIntegerField(null=True, blank=True)
-    gender = models.CharField(max_length=40, blank=True, verbose_name=_(u'Gender'), choices=GENDER) 
-    avatar = models.ImageField(upload_to='userprofiles/avatars', null=True, blank=True, verbose_name=_(u"Avatar"))
-    completion_level = models.PositiveSmallIntegerField(default=0, verbose_name=_(u'Profile completion percentage'))
-    email_is_verified = models.BooleanField(default=False, verbose_name=_(u'Email is verified'))
-    personal_info_is_completed = models.BooleanField(default=False, verbose_name=_(u'Personal info completed'))
+    phone = models.PositiveIntegerField(null=True, blank=True, verbose_name=_(u"Телефон"))
+    gender = models.CharField(max_length=40, blank=True, verbose_name=_(u'Пол'), choices=GENDER)
+    avatar = models.ImageField(upload_to='userprofiles/avatars', null=True, blank=True, verbose_name=_(u"Аватар"))
+    completion_level = models.PositiveSmallIntegerField(default=0, verbose_name=_(u'Процент заполнения профиля'))
+    email_is_verified = models.BooleanField(default=False, verbose_name=_(u'Email верифицирован'))
+    personal_info_is_completed = models.BooleanField(default=False, verbose_name=_(u'Персональная информация заполнена'))
 
     class Meta:
         verbose_name=_(u'User profile')

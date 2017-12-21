@@ -1,7 +1,6 @@
-{% extends "base.html" %}
+{% extends "account/base.html" %}
 {% load i18n avatar_tags %}
 
-{% block title %}Mon profil{% endblock %}
 
 {% block content %}
 <style>
@@ -20,7 +19,7 @@
 			</a>
 		</div>
 		<h1>{{ user.username }}</h1>
-		<p>{% if profile.completion_level == 100 %}<i class="fa fa-user fa-lg success"></i>&nbsp;{% endif %}{% trans "Profile completed at" %}
+		<p>{% if profile.completion_level == 100 %}<i class="fa fa-user fa-lg success"></i>&nbsp;{% endif %}{% trans "Профиль заполнен на" %}
 			<span class="generic_bold">
 				{{ profile.completion_level }}%
 			</span>
@@ -32,9 +31,9 @@
 	    </div>
 		{% if not profile.completion_level == 100 %}
 			<p class="alert alert-info text-center">
-				<i class="fa fa-user-times fa-lg"></i>&nbsp;{% trans "Your profile must be completed in order to access all the features of the site" %}
+				<i class="fa fa-user-times fa-lg"></i>&nbsp;{% trans "Ваш профиль должен быть заполнен для доступа ко всем функциям сайта" %}
 			</p>
-			<h3 class="text-center" style="margin-bottom:1.5em">{% trans "Thank you to complete these informations:" %}</h3>
+			<h3 class="text-center" style="margin-bottom:1.5em">{% trans "Спасибо за заполнение информации" %}</h3>
 		{% endif %}
 		<div class="row">
 			<div class="col-sm-6">
@@ -49,13 +48,13 @@
 				        		<i class="fa fa-check fa-2x success"></i>
 				        	{% endif %}
 				        </div>
-				        <h4><i class="fa fa-envelope-o fa-lg"></i>&nbsp;{% trans "Email adress verification" %}</h4>
+				        <h4><i class="fa fa-envelope-o fa-lg"></i>&nbsp;{% trans "Верификация Email" %}</h4>
 			        </div>
 			        <div class="panel-body">
 			        	{% if not profile.email_is_verified %}							
-								<a href="{% url 'account_email' %}" class="btn btn-primary">{% trans "Verify email" %}</a>
+								<a href="{% url 'account_email' %}" class="btn btn-primary">{% trans "Верифицировать Email" %}</a>
 							{% else %}
-								<a href="{% url 'account_email' %}" class="btn btn-default">{% trans "Edit email" %}</a>
+								<a href="{% url 'account_email' %}" class="btn btn-default">{% trans "Редактировать Email" %}</a>
 						{% endif %}
 			        </div>
 				</div>
@@ -72,13 +71,13 @@
 				        		<i class="fa fa-check fa-2x text-success"></i>
 				        	{% endif %}
 				        </div>
-				        <h4><i class="fa fa-book fa-lg"></i>&nbsp;{% trans "Personal infos" %}</h4>
+				        <h4><i class="fa fa-book fa-lg"></i>&nbsp;{% trans "Персональная информация" %}</h4>
 			        </div>
 			        <div class="panel-body">
 						{% if profile.personal_info_is_completed %}
-							<a href="{% url "profile-identity-form" profile.pk %}" class="btn btn-default">{% trans "Edit" %}</a>
+							<a href="{% url "profile-identity-form" profile.pk %}" class="btn btn-default">{% trans "Редактировать" %}</a>
 						{% else %}
-							<a href="{% url "profile-identity-form" profile.pk %}" class="btn btn-primary">{% trans "Complete now" %}</a>
+							<a href="{% url "profile-identity-form" profile.pk %}" class="btn btn-primary">{% trans "Заполнить сейчас" %}</a>
 						{% endif %}
 			        </div>
 			    </div>
@@ -87,8 +86,8 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<p class="gc gus-l">
-					<a href="{% url 'avatar_change' %}" class="btn btn-link">{% trans "Change your avatar" %}</a>
-					<a href="{% url 'account_change_password' %}" class="btn btn-link">{% trans "Change your password" %}</a>
+					<a href="{% url 'avatar_change' %}" class="btn btn-link">{% trans "Сменить аватар" %}</a>
+					<a href="{% url 'account_change_password' %}" class="btn btn-link">{% trans "Изменить пароль" %}</a>
 				</p>
 			</div>
 		</div>
