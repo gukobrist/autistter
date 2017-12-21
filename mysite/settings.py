@@ -52,13 +52,17 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.twitter',
     'allauth.socialaccount.providers.odnoklassniki',
     'allauth.socialaccount.providers.instagram',
+    'avatar',
 
+    'braces',
+    'django_forms_bootstrap',
+    'bootstrap3',
 ]
 
 SITE_ID = 1
-
+LOGIN_URL = '/'
 LOGIN_REDIRECT_URL = "/accounts/social/connections/"
-LOGOUT_URL = "/accounts/login/"
+LOGOUT_URL = "/accounts/logout/"
 ACCOUNT_EMAIL_REQUIRED = True
 #ACCOUNT_SIGNUP_FORM_CLASS = 'autist.forms.SignupForm'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
