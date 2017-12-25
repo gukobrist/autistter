@@ -1,10 +1,11 @@
 {% load adminlte_helpers i18n %}
+{% load i18n avatar_tags bootstrap %}
 <header class="main-header">
     <!-- Logo -->
     {% block logo %}
     <a href="{% block logo_href %}/dashboard{% endblock %}" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini">{% block logo_text_small %}<b>A</b>LTE{% endblock %}</span>
+        <span class="logo-mini">{% block logo_text_small %}<b>AU</b>.com{% endblock %}</span>
         <!-- logo for regular state and mobile devices -->
         <span class="logo-lg">{% block logo_text %}<b>A U T I S T E R</b>.COM{% endblock %}</span>
     </a>
@@ -30,13 +31,13 @@
                     {% if request.user.is_authenticated %}
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <img src="{% avatar_url size=50 %}" class="user-image" alt="User Image">
-                                <span class="hidden-xs">{% firstof request.user.get_short_name request.user.get_username %}</span>
+                                {% avatar user size=50 class="user-image" alt="User Image" %}
+                                <span class="hidden-xs">{{ user.username }}</span>
                             </a>
                             <ul class="dropdown-menu">
                                 {% block user_header %}
                                 <li class="user-header">
-                                    <img src="{% avatar_url size=180 %}" class="img-circle" alt="User Image">
+                                    {% avatar user size=180 class="img-circle" alt="User Image" %}
                                     <p>
                                         {% firstof request.user.get_short_name request.user.get_username %}
                                         <small>Member since {{ request.user.date_joined }}</small>
