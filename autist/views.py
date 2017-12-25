@@ -62,3 +62,10 @@ def page_about(request):
 
 def page_contact(request):
     return render(request, 'autist/contact.html');
+
+def page_dashboard(request):
+    if 1 == 1:
+        variable = True
+    else:
+        variable = False
+    return render(request, 'adminlte/index.html', {"profile_has_vk": variable})

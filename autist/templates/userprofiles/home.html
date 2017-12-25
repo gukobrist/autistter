@@ -1,4 +1,4 @@
-{% extends "account/base.html" %}
+{% extends "adminlte/base.html" %}
 {% load i18n avatar_tags %}
 
 
@@ -11,6 +11,7 @@
 	color:green;
 }
 </style>
+{% if profile_has_vk %} HAS VK {% endif %}
 <div class="row">
 	<div class="col-xs-12 col-md-offset-1 col-md-10 col-md-offset-1 col-lg-offset-2 col-lg-8 col-lg-offset-2">
 		<div style="float:left;margin:1em 1em 0 0">

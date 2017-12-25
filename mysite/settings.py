@@ -32,7 +32,6 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.sites',
     'django.contrib.contenttypes',
@@ -58,11 +57,14 @@ INSTALLED_APPS = [
     'django_forms_bootstrap',
     'bootstrap3',
     'userprofiles',
+    'django_adminlte',
+    'django_adminlte_theme',
+    'django.contrib.admin',
 ]
 
 SITE_ID = 1
 LOGIN_URL = '/'
-LOGIN_REDIRECT_URL = "/accounts/social/connections/"
+LOGIN_REDIRECT_URL = "/dashboard/"
 LOGOUT_URL = "/accounts/logout/"
 ACCOUNT_EMAIL_REQUIRED = True
 #ACCOUNT_SIGNUP_FORM_CLASS = 'autist.forms.SignupForm'

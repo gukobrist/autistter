@@ -23,6 +23,7 @@ class ProfileHomeView(LoginRequiredMixin, TemplateView):
         context = super(ProfileHomeView, self).get_context_data(**kwargs)
         profile = UserProfile.objects.get_or_create(user=self.request.user)[0]
         context['profile'] = profile
+        context['profile_has_vk'] = True
         return context
 
     
@@ -49,8 +50,3 @@ class ProfileIdentite(LoginRequiredMixin, UpdateView):
         profile.save()
         #return super(ProfileIdentite, self).form_valid(form)
         return HttpResponseRedirect(self.get_success_url())
-
-
-
-    
-    
