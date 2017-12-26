@@ -5,7 +5,7 @@
     {% block logo %}
     <a href="{% block logo_href %}/dashboard{% endblock %}" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini">{% block logo_text_small %}<b>AU</b>.com{% endblock %}</span>
+        <span class="logo-mini">{% block logo_text_small %}<b>AU</b>{% endblock %}</span>
         <!-- logo for regular state and mobile devices -->
         <span class="logo-lg">{% block logo_text %}<b>A U T I S T E R</b>.COM{% endblock %}</span>
     </a>
@@ -37,10 +37,12 @@
                             <ul class="dropdown-menu">
                                 {% block user_header %}
                                 <li class="user-header">
-                                    {% avatar user size=180 class="img-circle" alt="User Image" %}
+                                    <a href="/profile/">
+				                        {% avatar user size=100 class="img-circle" alt="User Image" %}
+                                    </a>
                                     <p>
-                                        {% firstof request.user.get_short_name request.user.get_username %}
-                                        <small>Member since {{ request.user.date_joined }}</small>
+                                        {% firstof request.user.get_full_name request.user.get_username %}
+                                        <small>Зарегистрирован {{ request.user.date_joined }}</small>
                                     </p>
                                 </li>
                                 {% endblock %}
@@ -53,7 +55,7 @@
                                            class="btn btn-default btn-flat">{% trans 'Change password' %}</a>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="{% block logout_url %}{% logout_url %}{% endblock %}" class="btn btn-default btn-flat">Sign out</a>
+                                        <a href="{% block logout_url %}{% logout_url %}{% endblock %}" class="btn btn-default btn-flat">Выйти</a>
                                     </div>
                                 </li>
                                 {% endblock %}

@@ -16,7 +16,36 @@
             </div>
         </div>
         <div class="box-body">
-            Start creating your amazing application!
+            {% load socialaccount %}
+            {% get_providers as socialaccount_providers %}
+                {% for provider in socialaccount_providers %}
+                    {% if provider.name == "VK" %}1
+                        <li>
+                            <a title="{{provider.name}}" class="socialaccount_provider {{provider.id}}" href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}">{{provider.name}}</a>
+                        </li>
+                    {% endif %}
+                    {% if provider.name == "Facebook" %}2
+                        <li>
+                            <a title="{{provider.name}}" class="socialaccount_provider {{provider.id}}" href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}">{{provider.name}}</a>
+                        </li>
+                    {% endif %}
+                    {% if provider.name == "Twitter" %}3
+                        <li>
+                            <a title="{{provider.name}}" class="socialaccount_provider {{provider.id}}" href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}">{{provider.name}}</a>
+                        </li>
+                    {% endif %}
+                    {% if provider.name == "Odnoklassniki" %}4
+                        <li>
+                            <a title="{{provider.name}}" class="socialaccount_provider {{provider.id}}" href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}">{{provider.name}}</a>
+                        </li>
+                    {% endif %}
+                    {% if provider.name == "Instagram" %}5
+                        <li>
+                            <a title="{{provider.name}}" class="socialaccount_provider {{provider.id}}" href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}">{{provider.name}}</a>
+                        </li>
+                    {% endif %}
+
+                {% endfor %}
         </div>
         <!-- /.box-body -->
         <div class="box-footer">
