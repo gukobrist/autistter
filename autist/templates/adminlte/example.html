@@ -16,36 +16,43 @@
             </div>
         </div>
         <div class="box-body">
-            {% load socialaccount %}
-            {% get_providers as socialaccount_providers %}
-                {% for provider in socialaccount_providers %}
-                    {% if provider.name == "VK" %}1
-                        <li>
-                            <a title="{{provider.name}}" class="socialaccount_provider {{provider.id}}" href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}">{{provider.name}}</a>
-                        </li>
-                    {% endif %}
-                    {% if provider.name == "Facebook" %}2
-                        <li>
-                            <a title="{{provider.name}}" class="socialaccount_provider {{provider.id}}" href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}">{{provider.name}}</a>
-                        </li>
-                    {% endif %}
-                    {% if provider.name == "Twitter" %}3
-                        <li>
-                            <a title="{{provider.name}}" class="socialaccount_provider {{provider.id}}" href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}">{{provider.name}}</a>
-                        </li>
-                    {% endif %}
-                    {% if provider.name == "Odnoklassniki" %}4
-                        <li>
-                            <a title="{{provider.name}}" class="socialaccount_provider {{provider.id}}" href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}">{{provider.name}}</a>
-                        </li>
-                    {% endif %}
-                    {% if provider.name == "Instagram" %}5
-                        <li>
-                            <a title="{{provider.name}}" class="socialaccount_provider {{provider.id}}" href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}">{{provider.name}}</a>
-                        </li>
-                    {% endif %}
+            {% if request.user.first_name or request.user.last_name %}
+                            {{ request.user.first_name }} {{ request.user.last_name }}
+                        {% else %}
+                        <strong>{{ request.user.username }}</strong>
+                        {% endif %}
+    {% if request.user.profile.account_verified %} (подтвержден) {% else %} (неподтвержден) {% endif %}
+            <br>
+            {{ user.socialaccount_set.all.0.user }}            <br>
+            {{ user.socialaccount_set.all.0.provider }}            <br>
+            {{ user.socialaccount_set.all.0.uid }}            <br>
+            {{ user.socialaccount_set.all.0.last_login}}            <br>
+            {{ user.socialaccount_set.all.0.date_joined}}            <br>
+            {{ user.socialaccount_set.all.0.extra_data }}            <br>
+            {{ user.socialaccount_set.all.0.extra_data.name }}            <br>
+            {{ user.socialaccount_set.all.0.get_profile_url }}            <br>
+            {{ user.socialaccount_set.all.0.get_avatar_url }}            <br>
+            {{ user.socialaccount_set.all.0.get_provider }}
+            {{ user.socialaccount_set.all.0.uid }}            <br>
+            {{ user.socialaccount_set.all.0.get_provider_account}}            <br>
+            <br>
+            {% for account in user.socialaccount_set.all %}
+            {{ account.user }}            <br>
+            {{ account.provider }}            <br>
+            {{ account.uid }}            <br>
+            {{ account.last_login}}            <br>
+            {{ account.date_joined}}            <br>
+            {{ account.extra_data }}            <br>
+            {{ account.extra_data.name }}            <br>
+            {{ account.get_profile_url }}            <br>
+            {{ account.get_avatar_url }}            <br>
+            {{ account.get_provider }}
+            {{ account.uid }}            <br>
+            {{ uaccount.get_provider_account}}            <br>
+            <br>
+            {% endfor %}
 
-                {% endfor %}
+
         </div>
         <!-- /.box-body -->
         <div class="box-footer">
