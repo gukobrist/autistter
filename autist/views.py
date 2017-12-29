@@ -68,4 +68,7 @@ def page_dashboard(request):
         variable = True
     else:
         variable = False
-    return render(request, 'adminlte/example.html', {"profile_has_vk": variable})
+    return render(request, 'adminlte/index.html', {"profile_has_vk": variable});
+
+def page_example(request):
+    return render(request, 'adminlte/example.html');

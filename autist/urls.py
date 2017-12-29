@@ -10,4 +10,5 @@ urlpatterns = [
     url(r'^about', views.page_about, name='page_about'),
     url(r'^contact', views.page_contact, name='page_contact'),
     url(r'^dashboard', views.page_dashboard, name='page_dashboard'),
+    url(r'^example', views.page_example, name='page_example'),
 ]
