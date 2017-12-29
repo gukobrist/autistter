@@ -118,7 +118,7 @@
                                     {% for account in user.socialaccount_set.all %}
                                     {% if account.provider == 'odnoklassniki' %}
                                     <li>
-                                        <a href="{{account.get_profile_url}}" target="_new">
+                                        <a href="https://ok.ru/profile/{{account.uid}}" target="_new">
                                         <img src="{{ account.get_avatar_url }}" width="25" height="25" class="img-circle" alt="User Image" />
                                         {{ account.extra_data.name }}
                                         </a>
