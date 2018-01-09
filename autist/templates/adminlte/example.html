@@ -17,11 +17,11 @@
         </div>
         <div class="box-body">
             {% if request.user.first_name or request.user.last_name %}
-                            {{ request.user.first_name }} {{ request.user.last_name }}
-                        {% else %}
-                        <strong>{{ request.user.username }}</strong>
-                        {% endif %}
-    {% if request.user.profile.account_verified %} (подтвержден) {% else %} (неподтвержден) {% endif %}
+            {{ request.user.first_name }} {{ request.user.last_name }}
+            {% else %}
+            <strong>{{ request.user.username }}</strong>
+            {% endif %}
+            {% if request.user.profile.account_verified %} (подтвержден) {% else %} (неподтвержден) {% endif %}
             <br>
             {{ user.socialaccount_set.all.0.user }}            <br>
             {{ user.socialaccount_set.all.0.provider }}            <br>
