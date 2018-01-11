@@ -1,0 +1,49 @@
+{% load socialaccount %}
+{% get_providers as socialaccount_providers %}
+<div class="box box-info">
+            <div class="box-header with-border">
+              <h2 class="box-title">Подключить аккаунт социальной сети</h2>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+            <b>Как подключить социальный аккаунт?</b>
+            <p>Есть 2 варианта подключения нескольких аккаунтов одной и той же социальной сети. Выберите тот, который лучше вам подходит:</p>
+            <strong>Вариант 1</strong>
+            <ul>
+             <li>Открыть браузер в режиме "Инкогнито".</li>
+             <li>Войти на сайт autister.com.</li>
+             <li>Открыть социальную сеть и залогиниться под нужным аккаунтом.</li>
+             <li>В панеле управления нажмите кнопку подключения нужной социальной сети.</li>
+            </ul>
+            <strong>Вариант 2</strong>
+            <ul>
+             <li>Выйдите из своей учетной записи социальной сети, если вы были авторизирвоаны.</li>
+             <li>Войдите под нужной учетной записью.</li>
+             <li>В панеле управления нажмите кнопку подключения нужной социальной сети.</li>
+            </ul>
+                <p>Мы поддерживаем:</p>
+            <div class="box-body">
+              <a class="btn btn-block btn-social btn-vk" href="{% provider_login_url 'vk' process='connect' action='reauthenticate' next='/dashboard/' %}">
+                <i class="fa fa-vk"></i> Подключить учетную запись VK
+              </a>
+              <a class="btn btn-block btn-social btn-facebook" href="{% provider_login_url 'facebook' process='connect' action='reauthenticate' next='/dashboard/' %}">
+                <i class="fa fa-facebook"></i> Подключить учетную запись FB
+              </a>
+              <a class="btn btn-block btn-social btn-twitter" href="{% provider_login_url 'twitter' process='connect' action='reauthenticate' next='/dashboard/' %}">
+                <i class="fa fa-twitter"></i> Подключить учетную запись Twitter
+              </a>
+              <a class="btn btn-block btn-social btn-openid" href="{% provider_login_url 'odnoklassniki' process='connect' action='reauthenticate' next='/dashboard/' %}">
+                <i class="fa fa-odnoklassniki"></i> Подключить учетную запись OK
+              </a>
+              <a class="btn btn-block btn-social btn-instagram" href="{% provider_login_url 'instagram' process='connect' action='reauthenticate' next='/dashboard/' %}">
+                <i class="fa fa-instagram"></i> Подключить учетную запись Instagram
+              </a>
+            </div>
+            </div>
+</div>

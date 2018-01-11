@@ -5,6 +5,7 @@ from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 from django.shortcuts import redirect
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from allauth.socialaccount.forms import DisconnectForm
 
 # Create your views here.
 
@@ -68,7 +69,8 @@ def page_dashboard(request):
         variable = True
     else:
         variable = False
-    return render(request, 'adminlte/index.html', {"profile_has_vk": variable});
+    myform = DisconnectForm(request=request)
+    return render(request, 'adminlte/index.html', {"profile_has_vk": variable, "form": myform});
 
 def page_example(request):
     return render(request, 'adminlte/example.html');
