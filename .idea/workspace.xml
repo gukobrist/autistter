@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9d674d08-8699-4d34-a03a-d88c10d88623" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/forms.py" afterPath="$PROJECT_DIR$/autist/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/templates/adminlte/base.html" afterPath="$PROJECT_DIR$/autist/templates/adminlte/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/templates/adminlte/index.html" afterPath="$PROJECT_DIR$/autist/templates/adminlte/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/templates/autist/base.html" afterPath="$PROJECT_DIR$/autist/templates/autist/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/templates/socialaccount/connections.html" afterPath="$PROJECT_DIR$/autist/templates/socialaccount/connections.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/views.py" afterPath="$PROJECT_DIR$/autist/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,41 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/autist/templates/autist/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="199" column="37" lean-forward="false" selection-start-line="199" selection-start-column="37" selection-end-line="199" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/autist/templates/adminlte/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_main_sidebar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/autist/templates/adminlte/lib/_main_sidebar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="655">
-              <caret line="130" column="71" lean-forward="true" selection-start-line="130" selection-start-column="40" selection-end-line="130" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_main_header.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/autist/templates/adminlte/lib/_main_header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/autist/templates/adminlte/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="38" column="63" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="63" />
+            <state relative-caret-position="144">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -161,7 +135,6 @@
         <option value="$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/allauth/socialaccount/providers/facebook/provider.py" />
         <option value="$PROJECT_DIR$/autist/templates/adminlte/example.html" />
         <option value="$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/allauth/socialaccount/providers/vk/provider.py" />
-        <option value="$PROJECT_DIR$/autist/templates/autist/base.html" />
         <option value="$PROJECT_DIR$/autist/templates/adminlte/connect.html" />
         <option value="$PROJECT_DIR$/autist/templates/adminlte/disconnect.html" />
         <option value="$PROJECT_DIR$/autist/templates/socialaccount/connections.html" />
@@ -170,6 +143,7 @@
         <option value="$PROJECT_DIR$/autist/views.py" />
         <option value="$PROJECT_DIR$/autist/templates/adminlte/base.html" />
         <option value="$PROJECT_DIR$/autist/templates/adminlte/index.html" />
+        <option value="$PROJECT_DIR$/autist/templates/autist/base.html" />
       </list>
     </option>
   </component>
@@ -228,6 +202,13 @@
               <item name="autist" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="adminlte" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="autist" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="autist" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="site" type="b2602c69:ProjectViewProjectNode" />
@@ -688,14 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autist/templates/autist/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="198" column="0" lean-forward="false" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/autist/templates/adminlte/disconnect.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -824,18 +797,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autist/templates/adminlte/lib/_main_sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="130" column="71" lean-forward="true" selection-start-line="130" selection-start-column="40" selection-end-line="130" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/django_adminlte_theme/templates/admin/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autist/templates/adminlte/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="63" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="63" />
           <folding />
         </state>
       </provider>
@@ -848,18 +821,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autist/templates/adminlte/index.html">
+    <entry file="file://$PROJECT_DIR$/autist/templates/adminlte/lib/_main_sidebar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="655">
+          <caret line="130" column="71" lean-forward="true" selection-start-line="130" selection-start-column="40" selection-end-line="130" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autist/templates/adminlte/base.html">
+    <entry file="file://$PROJECT_DIR$/autist/templates/adminlte/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="38" column="63" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="63" />
+        <state relative-caret-position="144">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autist/templates/autist/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="199" column="37" lean-forward="false" selection-start-line="199" selection-start-column="37" selection-end-line="199" selection-end-column="37" />
           <folding />
         </state>
       </provider>
