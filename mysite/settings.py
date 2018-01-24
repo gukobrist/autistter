@@ -91,6 +91,7 @@ SOCIALACCOUNT_PROVIDERS = {
     }
 }
 
+PREPEND_WWW = True
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
