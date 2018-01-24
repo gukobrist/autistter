@@ -1,9 +1,13 @@
 # -*- coding: utf-8 -*-
 from django.db import models
 from django.utils import timezone
+from allauth.account.forms import BaseSignupForm
+from django import forms
 from ckeditor_uploader.fields import RichTextUploadingField
 from uuslug import slugify
 from django.db import models
+from django.contrib.auth.models import User
+from allauth.socialaccount.models import SocialAccount, SocialLogin
 
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
@@ -29,6 +33,17 @@ class Post(models.Model):
     def save(self):
         self.slug = '{0}-{1}'.format(self.pk, slugify(self.title))  # Статья будет отображаться в виде NN-АА-АААА
         super(Post, self).save()
+
+class AddProject(models.Model):
+    user = models.ForeignKey(User)
+    title = models.CharField(max_length=200, verbose_name=u"Назние проекта")
+    accounts = models.ManyToManyField(SocialAccount, verbose_name=('Подключенные аккаунты к учетной записи'))
+
+    def __str__(self):
+        return self.title
+
+
+
 
 
 

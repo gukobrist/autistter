@@ -1,5 +1,7 @@
 {% extends 'autist/base.html' %}
 {% load staticfiles %}
+{% load bootstrap_tags %}
+{% load bootstrap %}
 {% block headimg %}
 <header class="intro-header" style="background-image: url({% static 'blog/img/post-sample-image.jpg' %})">
 {% endblock %}
@@ -11,46 +13,20 @@
 {% endblock %}
 
 {% block content1 %}
-<div class="post-preview">
-            
-                <p>Хотите связаться со мной по любому вопросу? Пиши мне в <a href="https://twitter.com/autistter">twitter</a> или через эту форму</p>
-                <form name="sentMessage" id="contactForm" novalidate>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Имя</label>
-                            <input type="text" class="form-control" placeholder="Имя" id="name" required data-validation-required-message="Пожалуйста представьтесь.">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Email</label>
-                            <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Пожалуйста введите почту">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Телефон</label>
-                            <input type="tel" class="form-control" placeholder="Телефон" id="phone" required data-validation-required-message="Пожалуйста укажите номер своего телефона">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Сообщение</label>
-                            <textarea rows="5" class="form-control" placeholder="Сообщение" id="message" required data-validation-required-message="Пожалуйста введите ваше обращение"></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <br>
-                    <div id="success"></div>
-                    <div class="row">
-                        <div class="form-group col-xs-12">
-                            <button type="submit" class="btn btn-default">Отправить</button>
-                        </div>
-                    </div>
-                </form>
-            
-</div>
-  {% endblock %}
+    <div class="post-preview">
+    <p>Хотите связаться со мной по любому вопросу? Пиши мне в <a href="https://twitter.com/autistter">twitter</a> или через эту форму</p>
+
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form|as_bootstrap }}
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <div class="g-recaptcha" data-sitekey="6LfnxkAUAAAAAIfp98JhTJfJE4TtD85mi-TZe7W3"></div>
+        {% if messages %}
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        {% endif %}
+        <button type="submit" class="btn btn-default btn-sm">Отправить</button>
+
+    </form>
+    </div>
+{% endblock %}

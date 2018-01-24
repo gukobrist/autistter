@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.admin',
     'autist',
     'ckeditor',
     'ckeditor_uploader',
@@ -59,12 +60,13 @@ INSTALLED_APPS = [
     'userprofiles',
     'django_adminlte',
     'django_adminlte_theme',
-    'django.contrib.admin',
+    'phonenumber_field',
+    'snowpenguin.django.recaptcha2',
 ]
 
 SITE_ID = 1
 LOGIN_URL = '/'
-LOGIN_REDIRECT_URL = "/dashboard/"
+LOGIN_REDIRECT_URL = "/projects/"
 LOGOUT_URL = "/accounts/logout/"
 ACCOUNT_EMAIL_REQUIRED = True
 #ACCOUNT_SIGNUP_FORM_CLASS = 'autist.forms.SignupForm'
@@ -75,6 +77,9 @@ SOCIALACCOUNT_EMAIL_VERIFICATION  = False
 ACCOUNT_PASSWORD_MIN_LENGTH = 8
 ACCOUNT_EMAIL_CONFIRMATION_ANONYMOUS_REDIRECT_URL = '/'
 ACCOUNT_EMAIL_CONFIRMATION_AUTHENTICATED_REDIRECT_URL = '/account/'
+
+GOOGLE_RECAPTCHA_SECRET_KEY = '6LfnxkAUAAAAANUkcq7HjkB2TZMFITNYHfRNm5Gy'
+RECAPTCHA_PUBLIC_KEY = '6LfnxkAUAAAAAIfp98JhTJfJE4TtD85mi-TZe7W3'
 
 
 SOCIALACCOUNT_PROVIDERS = {
@@ -100,6 +105,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -158,7 +164,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
-LANGUAGE_CODE = 'ru-RU'
+LANGUAGE_CODE = 'en-EN'
 
 TIME_ZONE = 'UTC'
 

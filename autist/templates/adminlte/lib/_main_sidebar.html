@@ -27,28 +27,25 @@
         <ul class="sidebar-menu">
             {% block nav_links_outer %}
             <li class="header">{% block nav_heading %}ГЛАВНОЕ МЕНЮ{% endblock %}</li>
-
             {% block nav_links %}
-
-                <li class="active menu-open">
-                    <a href="#">
-                        <i class="fa fa-user-plus"></i> <span>Подключить аккаунт</span>
+                <li class="treeview menu-open" data-follow-link="1">
+                    <a href="{% url 'connect_accounts' %}">
+                        <i class="fa fa-user-plus"></i>Подключить аккаунт
                         <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
                         </span>
-                    </a>
+                        </a>
+
+
 
                     <ul class="treeview-menu">
-                        <li class="active menu-open">
+                        <li>
                             <a href="#"><i class="fa fa-vk"></i> Вконтакте
                                 <span class="pull-right-container">
                                     <i class="fa fa-angle-left pull-right"></i>
                                 </span>
                             </a>
                                 <ul class="treeview-menu">
-                                    <li>
-                                    <a title="{{provider.name}}" class="btn bg-purple margin" href="{% provider_login_url 'vk' process='connect' action='reauthenticate' next='/dashboard/' %}"><i class="fa fa-user-plus"></i>Подключить VK</a>
-                                    </li>
                                     {% for account in user.socialaccount_set.all %}
                                     {% if account.provider == 'vk' %}
                                     <li>
@@ -61,16 +58,13 @@
                                     {% endfor %}
                                 </ul>
                         </li>
-                        <li class="active menu-open">
+                        <li>
                             <a href="#"><i class="fa fa-facebook"></i> FaceBook
                                 <span class="pull-right-container">
                                     <i class="fa fa-angle-left pull-right"></i>
                                 </span>
                             </a>
                                 <ul class="treeview-menu">
-                                    <li>
-                                    <a title="{{provider.name}}" class="btn bg-purple margin" href="{% provider_login_url 'facebook' process='connect' action='reauthenticate' next='/dashboard/' %}"><i class="fa fa-user-plus"></i>Подключить FB</a>
-                                    </li>
                                     {% for account in user.socialaccount_set.all %}
                                     {% if account.provider == 'facebook' %}
                                     <li>
@@ -83,16 +77,13 @@
                                     {% endfor %}
                                 </ul>
                         </li>
-                        <li class="active menu-open">
+                        <li>
                             <a href="#"><i class="fa fa-twitter"></i> Twitter
                                 <span class="pull-right-container">
                                     <i class="fa fa-angle-left pull-right"></i>
                                 </span>
                             </a>
                                 <ul class="treeview-menu">
-                                    <li>
-                                    <a title="{{provider.name}}" class="btn bg-purple margin" href="{% provider_login_url 'twitter' process='connect' action='reauthenticate' next='/dashboard/' %}"><i class="fa fa-user-plus"></i>Подключить Twitter</a>
-                                    </li>
                                     {% for account in user.socialaccount_set.all %}
                                     {% if account.provider == 'twitter' %}
                                     <li>
@@ -105,16 +96,13 @@
                                     {% endfor %}
                                 </ul>
                         </li>
-                        <li class="active menu-open">
+                        <li>
                             <a href="#"><i class="fa  fa-odnoklassniki"></i> Одноклассники
                                 <span class="pull-right-container">
                                     <i class="fa fa-angle-left pull-right"></i>
                                 </span>
                             </a>
                                 <ul class="treeview-menu">
-                                    <li>
-                                    <a title="{{provider.name}}" class="btn bg-purple margin" href="{% provider_login_url 'odnoklassniki' process='connect' action='reauthenticate' next='/dashboard/' %}"><i class="fa fa-user-plus"></i>Подключить OK</a>
-                                    </li>
                                     {% for account in user.socialaccount_set.all %}
                                     {% if account.provider == 'odnoklassniki' %}
                                     <li>
@@ -127,16 +115,13 @@
                                     {% endfor %}
                                 </ul>
                         </li>
-                        <li class="active menu-open">
+                        <li>
                             <a href="#"><i class="fa fa-instagram"></i> Instagram
                                 <span class="pull-right-container">
                                     <i class="fa fa-angle-left pull-right"></i>
                                 </span>
                             </a>
                                 <ul class="treeview-menu">
-                                    <li>
-                                    <a title="{{provider.name}}" class="btn bg-purple margin" href="{% provider_login_url 'instagram' process='connect' action='reauthenticate' next='/dashboard/' %}"><i class="fa fa-user-plus"></i>Подключить Instagram</a>
-                                    </li>
                                     {% for account in user.socialaccount_set.all %}
                                     {% if account.provider == 'instagram' %}
                                     <li>
@@ -149,13 +134,32 @@
                                     {% endfor %}
                                 </ul>
                         </li>
-
+                    </ul>
+                </li>
+                <li class="treeview menu-open" data-follow-link="1">
+                    <a href="{% url 'projects' %}">
+                        <i class="fa fa-cube"></i> <span>Добавить акк. в проект</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                        </a>
+                   {% for project in projects %}
+                    <ul class="treeview-menu">
                         <li>
-                            <a href="#">
-                                <i class="fa fa-user"></i> Another link
-                            </a>
+                            <a href="#"><i class="fa fa-desktop"></i>{{ project }}
+                            <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span></a>
+                            <ul class="treeview-menu">
+                                <li>
+                                    <a href="general.html"><i class="fa fa-circle-o"></i> General</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
+                   {% endfor %}
+                </a>
+                </li>
 
                 </li>
         </ul>
