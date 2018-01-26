@@ -23,6 +23,7 @@ from django.contrib.auth.decorators import login_required
 from allauth.account import app_settings as account_settings
 
 
+
 class ConnectionsView(AjaxCapableProcessFormViewMixin, FormView):
     template_name = (
         "adminlte/index."  +
@@ -106,14 +107,9 @@ def post_edit(request, slug):
         form = PostForm(instance=post)
     return render(request, 'autist/post_edit.html', {'form': form})
 
-
-
-
-
-
-
 def page_add_project(request):
     project = AddProject.objects.filter(user=request.user)
+    accounts = AddProject.objects.all
     if request.method == "POST":
         form = AddProjectForm(request.POST, request=request)
         if form.is_valid():
@@ -163,7 +159,8 @@ def page_contact(request):
 def page_about(request):
     return render(request, 'autist/about.html')
 
-
+def dashboard(request):
+    return render(request, 'adminlte/index.html')
 
 def page_example(request):
     return render(request, 'adminlte/example.html')

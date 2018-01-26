@@ -27,34 +27,4 @@
                 </form>
             </div>
 </div>
-
-<div class="box box-primary">
-            <div class="box-header ui-sortable-handle" style="cursor: move;">
-              <i class="ion ion-clipboard"></i>
-
-              <h3 class="box-title">Редактировать или удалить проект</h3>
-
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-              <!-- See dist/js/pages/dashboard.js to activate the todoList plugin -->
-
-              <ul class="todo-list ui-sortable">
-                  {% for project in projects %}
-                <li>
-                  <!-- drag handle -->
-                  <span class="handle ui-sortable-handle">
-                        <i class="fa fa-ellipsis-v"></i>
-                        <i class="fa fa-ellipsis-v"></i>
-                      </span>
-                  <span class="text">{{ project.title }}</span>
-                  <div class="tools">
-                      <a href=""><i class="fa fa-edit"></i></a>
-                    <i class="fa fa-trash-o"></i>
-                  </div>
-                </li>
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
 {% endblock %}

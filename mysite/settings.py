@@ -64,19 +64,22 @@ INSTALLED_APPS = [
     'snowpenguin.django.recaptcha2',
 ]
 
+
+
 SITE_ID = 1
 LOGIN_URL = '/'
-LOGIN_REDIRECT_URL = "/projects/"
+LOGIN_REDIRECT_URL = "/dashboard/"
 LOGOUT_URL = "/accounts/logout/"
 ACCOUNT_EMAIL_REQUIRED = True
-#ACCOUNT_SIGNUP_FORM_CLASS = 'autist.forms.SignupForm'
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-ACCOUNT_EMAIL_VERIFICATION = 'optional'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 SOCIALACCOUNT_EMAIL_REQUIRED = False
 SOCIALACCOUNT_EMAIL_VERIFICATION  = False
 ACCOUNT_PASSWORD_MIN_LENGTH = 8
-ACCOUNT_EMAIL_CONFIRMATION_ANONYMOUS_REDIRECT_URL = '/'
-ACCOUNT_EMAIL_CONFIRMATION_AUTHENTICATED_REDIRECT_URL = '/account/'
+ACCOUNT_EMAIL_CONFIRMATION_ANONYMOUS_REDIRECT_URL = '/dashboard/'
+ACCOUNT_EMAIL_CONFIRMATION_AUTHENTICATED_REDIRECT_URL = '/dashboard/'
+
+
 
 GOOGLE_RECAPTCHA_SECRET_KEY = '6LfnxkAUAAAAANUkcq7HjkB2TZMFITNYHfRNm5Gy'
 RECAPTCHA_PUBLIC_KEY = '6LfnxkAUAAAAAIfp98JhTJfJE4TtD85mi-TZe7W3'
@@ -261,6 +264,6 @@ CKEDITOR_CONFIGS = {
 CKEDITOR_BROWSE_SHOW_DIRS = True
 
 try:
-    from local_settings import *
+    from mysite.local_settings import *
 except:
     pass

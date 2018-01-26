@@ -28,7 +28,7 @@
             {% block nav_links_outer %}
             <li class="header">{% block nav_heading %}ГЛАВНОЕ МЕНЮ{% endblock %}</li>
             {% block nav_links %}
-                <li class="treeview menu-open" data-follow-link="1">
+                <li class="treeview menu-open">
                     <a href="{% url 'connect_accounts' %}">
                         <i class="fa fa-user-plus"></i>Подключить аккаунт
                         <span class="pull-right-container">
@@ -39,6 +39,7 @@
 
 
                     <ul class="treeview-menu">
+                        <li><a href="{% url 'connect_accounts' %}"><i class="fa fa-circle-o text-red"></i> <span><strong>Подключить аккаунты</strong></span></a></li>
                         <li>
                             <a href="#"><i class="fa fa-vk"></i> Вконтакте
                                 <span class="pull-right-container">
@@ -136,28 +137,72 @@
                         </li>
                     </ul>
                 </li>
-                <li class="treeview menu-open" data-follow-link="1">
-                    <a href="{% url 'projects' %}">
+                <li class="treeview menu-open">
+                    <a href="#">
                         <i class="fa fa-cube"></i> <span>Добавить акк. в проект</span>
                         <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
                         </span>
                         </a>
-                   {% for project in projects %}
-                    <ul class="treeview-menu">
-                        <li>
-                            <a href="#"><i class="fa fa-desktop"></i>{{ project }}
-                            <span class="pull-right-container">
+
+                        <ul class="treeview-menu">
+                            <li><a href="{% url 'projects' %}"><i class="fa fa-circle-o text-red"></i> <span><strong>Создать проект</strong></span></a></li>
+                            {% for project in project %}
+                            <li>
+                                <a href="#"><i class="fa fa-desktop"></i>{{ project }}
+                                <span class="pull-right-container">
                                     <i class="fa fa-angle-left pull-right"></i>
-                                </span></a>
-                            <ul class="treeview-menu">
-                                <li>
-                                    <a href="general.html"><i class="fa fa-circle-o"></i> General</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                   {% endfor %}
+                                </span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    {% for account in project.accounts.all %}
+
+                                    {% if account.provider == 'vk' %}
+                                    <li>
+                                        <a href="https://vk.com/{{account.extra_data.screen_name}}" target="_new">
+                                        <img src="{{ account.get_avatar_url }}" width="25" height="25" class="img-circle" alt="User Image" />
+                                        	&nbsp;{{ account.extra_data.first_name}}&nbsp;{{ account.extra_data.last_name }}
+                                        </a>
+                                    </li>
+                                    {% endif %}
+                                    {% if account.provider == 'facebook' %}
+                                    <li>
+                                        <a href="{{account.get_profile_url}}" target="_new">
+                                        <img src="{{ account.get_avatar_url }}" width="25" height="25" class="img-circle" alt="User Image" />
+                                        &nbsp;{{ account.extra_data.name }}
+                                        </a>
+                                    </li>
+                                    {% endif %}
+                                    {% if account.provider == 'twitter' %}
+                                    <li>
+                                        <a href="{{account.get_profile_url}}" target="_new">
+                                        <img src="{{ account.get_avatar_url }}" width="25" height="25" class="img-circle" alt="User Image" />
+                                        &nbsp;{{ account.extra_data.name }}
+                                        </a>
+                                    </li>
+                                    {% endif %}
+                                    {% if account.provider == 'odnoklassniki' %}
+                                    <li>
+                                        <a href="https://ok.ru/profile/{{account.uid}}" target="_new">
+                                        <img src="{{ account.get_avatar_url }}" width="25" height="25" class="img-circle" alt="User Image" />
+                                        &nbsp;{{ account.extra_data.name }}
+                                        </a>
+                                    </li>
+                                    {% endif %}
+                                    {% if account.provider == 'instagram' %}
+                                    <li>
+                                        <a href="{{account.get_profile_url}}" target="_new">
+                                        <img src="{{ account.get_avatar_url }}" width="25" height="25" class="img-circle" alt="User Image" />
+                                        &nbsp;{{ account.extra_data.username }}
+                                        </a>
+                                    </li>
+                                    {% endif %}
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                            {% endfor %}
+                        </ul>
+
                 </a>
                 </li>
 
