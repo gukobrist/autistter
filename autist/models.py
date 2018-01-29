@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.db import models
+from tinymce.models import HTMLField
 from django.utils import timezone
 from allauth.account.forms import BaseSignupForm
 from django import forms
@@ -43,7 +44,7 @@ class AddProject(models.Model):
         return self.title
 
 
-
-
+class VkPosts(models.Model):
+    text = HTMLField(verbose_name=u'Текст записи', blank=True)
 
 

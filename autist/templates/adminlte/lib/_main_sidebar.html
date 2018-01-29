@@ -202,11 +202,20 @@
                             </li>
                             {% endfor %}
                         </ul>
-
-                </a>
+                </li>
+                <li class="treeview menu-open">
+                    <a href="#">
+                        <i class="fa fa-envelope-o"></i> <span>Запланировать пост</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                        </a>
+                    <ul class="treeview-menu">
+                            <li>
+                            <a href="{% url 'post_in_vk' %}"><i class="fa fa-vk"></i> Запланировать пост в ВК
+                            </a>
                 </li>
 
-                </li>
         </ul>
                 </li>
             {% endblock nav_links %}

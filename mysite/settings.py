@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     'django_adminlte_theme',
     'phonenumber_field',
     'snowpenguin.django.recaptcha2',
+    'tinymce',
 ]
 
 

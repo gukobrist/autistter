@@ -7,7 +7,7 @@ from .forms import PostForm
 from django.shortcuts import redirect
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from allauth.socialaccount.forms import DisconnectForm
-from .forms import ContactForm, AddProjectForm
+from .forms import ContactForm, AddProjectForm, VkPostsForm
 from allauth.account.views import (
     AjaxCapableProcessFormViewMixin,
     CloseableSignupMixin,
@@ -21,6 +21,8 @@ from allauth.account.adapter import get_adapter as get_account_adapter
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from allauth.account import app_settings as account_settings
+from allauth.socialaccount.models import SocialToken
+import vk
 
 
 
@@ -109,7 +111,6 @@ def post_edit(request, slug):
 
 def page_add_project(request):
     project = AddProject.objects.filter(user=request.user)
-    accounts = AddProject.objects.all
     if request.method == "POST":
         form = AddProjectForm(request.POST, request=request)
         if form.is_valid():
@@ -142,18 +143,38 @@ def project_delete(request, pk):
     project_delete = get_object_or_404(AddProject, pk=pk).delete()
     return redirect('projects')
 
+def post_in_vk(request):
+    access_token = SocialToken.objects.filter(account__user=request.user, account__provider='vk')
+    session = vk.Session(access_token=access_token)
+    api = vk.API(session)
+    api.wall.post(message='Hello, World!')
+    if request.method == "POST":
+        form = VkPostsForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.save()
+            return redirect('post_in_vk')
+    else:
+        form = VkPostsForm()
+    return render(request, 'adminlte/post_in_vk.html', {'form': form, 'access_token': access_token})
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 def page_contact(request):
-    if request.method == 'POST':
-        form = ContactForm(request.POST)
-        if request.recaptcha_is_valid:
-            pass
-    else:
-        form = ContactForm()
+    form = ContactForm(request.POST)
+    if request.recaptcha_is_valid:
+        pass
     return render(request, 'autist/contact.html', {'form': form})
 
 def page_about(request):
