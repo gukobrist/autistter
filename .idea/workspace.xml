@@ -4,18 +4,7 @@
     <list default="true" id="9d674d08-8699-4d34-a03a-d88c10d88623" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/forms.py" afterPath="$PROJECT_DIR$/autist/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/models.py" afterPath="$PROJECT_DIR$/autist/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/templates/adminlte/base.html" afterPath="$PROJECT_DIR$/autist/templates/adminlte/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/templates/adminlte/index.html" afterPath="$PROJECT_DIR$/autist/templates/adminlte/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/templates/adminlte/lib/_main_header.html" afterPath="$PROJECT_DIR$/autist/templates/adminlte/lib/_main_header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/templates/adminlte/lib/_main_sidebar.html" afterPath="$PROJECT_DIR$/autist/templates/adminlte/lib/_main_sidebar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/templates/adminlte/lib/_scripts.html" afterPath="$PROJECT_DIR$/autist/templates/adminlte/lib/_scripts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/templates/adminlte/lib/_styles.html" afterPath="$PROJECT_DIR$/autist/templates/adminlte/lib/_styles.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/urls.py" afterPath="$PROJECT_DIR$/autist/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/views.py" afterPath="$PROJECT_DIR$/autist/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/settings.py" afterPath="$PROJECT_DIR$/mysite/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/urls.py" afterPath="$PROJECT_DIR$/mysite/urls.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,7 +18,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/autist/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="738">
@@ -53,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/autist/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="148" column="25" lean-forward="true" selection-start-line="148" selection-start-column="25" selection-end-line="148" selection-end-column="25" />
+            <state relative-caret-position="414">
+              <caret line="146" column="0" lean-forward="true" selection-start-line="146" selection-start-column="0" selection-end-line="149" selection-end-column="42" />
               <folding>
                 <element signature="e#24#57#0" expanded="true" />
               </folding>
@@ -79,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/allauth/socialaccount/providers/vk/provider.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="473">
-              <caret line="33" column="93" lean-forward="false" selection-start-line="33" selection-start-column="93" selection-end-line="33" selection-end-column="93" />
+              <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="94" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -178,9 +167,9 @@
       <find>block content</find>
       <find>d</find>
       <find>provider</find>
-      <find>offline</find>
       <find>MEDIA_ROOT</find>
       <find>SocialToken</find>
+      <find>offline</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/</dir>
@@ -983,31 +972,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/allauth/socialaccount/providers/vk/provider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="33" column="93" lean-forward="false" selection-start-line="33" selection-start-column="93" selection-end-line="33" selection-end-column="93" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2125">
           <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autist/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="148" column="25" lean-forward="true" selection-start-line="148" selection-start-column="25" selection-end-line="148" selection-end-column="25" />
-          <folding>
-            <element signature="e#24#57#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1027,6 +996,26 @@
           <caret line="47" column="62" lean-forward="false" selection-start-line="47" selection-start-column="62" selection-end-line="47" selection-end-column="62" />
           <folding>
             <element signature="e#24#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/allauth/socialaccount/providers/vk/provider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="94" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autist/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="146" column="0" lean-forward="true" selection-start-line="146" selection-start-column="0" selection-end-line="149" selection-end-column="42" />
+          <folding>
+            <element signature="e#24#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
