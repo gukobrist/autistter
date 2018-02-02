@@ -145,7 +145,7 @@ def project_delete(request, pk):
 
 def post_in_vk(request):
     access_token = SocialToken.objects.filter(account__user=request.user, account__provider='vk')
-    session = vk.Session(access_token=access_token, scope='wall, messages')
+    session = vk.Session(access_token=access_token)
     api = vk.API(session)
     api.wall.post(message='Hello, World!')
     if request.method == "POST":

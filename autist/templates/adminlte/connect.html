@@ -31,24 +31,25 @@
              <li>Выйдите из своей учетной записи социальной сети, если вы были авторизирвоаны.</li>
              <li>Войдите под нужной учетной записью.</li>
              <li>В панеле управления нажмите кнопку подключения нужной социальной сети.</li>
-            </ul>
+            </ul>111
                 <p>Мы поддерживаем:</p>
             <div class="box-body">
-              <a class="btn btn-block btn-social btn-vk" href="{% provider_login_url 'vk' process='connect' action='reauthenticate' next='/dashboard/' %}">
+              <a class="btn btn-block btn-social btn-vk" href="{% provider_login_url 'vk' process='connect' next='/dashboard/' %}">
                 <i class="fa fa-vk"></i> Подключить учетную запись VK
               </a>
-              <a class="btn btn-block btn-social btn-facebook" href="{% provider_login_url 'facebook' process='connect' action='reauthenticate' next='/dashboard/' %}">
+              <a class="btn btn-block btn-social btn-facebook" href="{% provider_login_url 'facebook' process='connect' next='/dashboard/' %}">
                 <i class="fa fa-facebook"></i> Подключить учетную запись FB
               </a>
-              <a class="btn btn-block btn-social btn-twitter" href="{% provider_login_url 'twitter' process='connect' action='reauthenticate' next='/dashboard/' %}">
+              <a class="btn btn-block btn-social btn-twitter" href="{% provider_login_url 'twitter' process='connect' next='/dashboard/' %}">
                 <i class="fa fa-twitter"></i> Подключить учетную запись Twitter
               </a>
-              <a class="btn btn-block btn-social btn-openid" href="{% provider_login_url 'odnoklassniki' process='connect' action='reauthenticate' next='/dashboard/' %}">
+              <a class="btn btn-block btn-social btn-openid" href="{% provider_login_url 'odnoklassniki' process='connect' next='/dashboard/' %}">
                 <i class="fa fa-odnoklassniki"></i> Подключить учетную запись OK
               </a>
-              <a class="btn btn-block btn-social btn-instagram" href="{% provider_login_url 'instagram' process='connect' action='reauthenticate' next='/dashboard/' %}">
+              <a class="btn btn-block btn-social btn-instagram" href="{% provider_login_url 'instagram' process='connect' next='/dashboard/' %}">
                 <i class="fa fa-instagram"></i> Подключить учетную запись Instagram
               </a>
+
             </div>
             </div>
 </div>
@@ -206,6 +207,8 @@
     </div>
 </div>
 </div>
+
+
 
 {% if profile_has_vk %} HAS VK {% endif %}
 {% endblock %}
