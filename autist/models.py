@@ -47,4 +47,16 @@ class AddProject(models.Model):
 class VkPosts(models.Model):
     text = HTMLField(verbose_name=u'Текст записи', blank=True)
 
+class FbPosts(models.Model):
+    text = HTMLField(verbose_name=u'Текст записи', blank=True)
+
+class TwPosts(models.Model):
+    text = HTMLField(verbose_name=u'Текст записи', blank=True)
+
+class OkPosts(models.Model):
+    text = HTMLField(verbose_name=u'Текст записи', blank=True)
+
+class InPosts(models.Model):
+    text = HTMLField(verbose_name=u'Текст записи', blank=True)
+
 

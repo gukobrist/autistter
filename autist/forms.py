@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from django import forms
-from .models import Post, AddProject, VkPosts
+from .models import Post, AddProject, VkPosts, FbPosts, TwPosts, OkPosts, InPosts
 from phonenumber_field.modelfields import PhoneNumberField
 from django import forms
 from allauth.socialaccount.models import SocialAccount
@@ -45,4 +45,24 @@ class AddProjectForm(forms.ModelForm):
 class VkPostsForm(forms.ModelForm):
     class Meta:
         model = VkPosts
+        fields = ('text',)
+
+class FbPostsForm(forms.ModelForm):
+    class Meta:
+        model = FbPosts
+        fields = ('text',)
+
+class TwPostsForm(forms.ModelForm):
+    class Meta:
+        model = TwPosts
+        fields = ('text',)
+
+class OkPostsForm(forms.ModelForm):
+    class Meta:
+        model = OkPosts
+        fields = ('text',)
+
+class InPostsForm(forms.ModelForm):
+    class Meta:
+        model = InPosts
         fields = ('text',)

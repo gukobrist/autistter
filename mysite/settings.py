@@ -81,14 +81,15 @@ ACCOUNT_EMAIL_CONFIRMATION_ANONYMOUS_REDIRECT_URL = '/dashboard/'
 ACCOUNT_EMAIL_CONFIRMATION_AUTHENTICATED_REDIRECT_URL = '/dashboard/'
 
 
-
-GOOGLE_RECAPTCHA_SECRET_KEY = '6LfnxkAUAAAAANUkcq7HjkB2TZMFITNYHfRNm5Gy'
-RECAPTCHA_PUBLIC_KEY = '6LfnxkAUAAAAAIfp98JhTJfJE4TtD85mi-TZe7W3'
-
-
 SOCIALACCOUNT_PROVIDERS = {
     'facebook': {
         'SCOPE': ['email', 'publish_actions', 'public_profile', 'user_managed_groups', 'manage_pages', 'publish_pages'],
+        'AUTH_PARAMS': {'auth_type': 'reauthenticate'},
+        'METHOD': 'oauth2',
+        'VERIFIED_EMAIL': False
+    },
+    'vk': {
+        'SCOPE': ['wall', 'offline', 'groups', 'photos', 'stats', 'docs', 'video',],
         'AUTH_PARAMS': {'auth_type': 'reauthenticate'},
         'METHOD': 'oauth2',
         'VERIFIED_EMAIL': False
