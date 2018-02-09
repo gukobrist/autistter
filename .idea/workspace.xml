@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9d674d08-8699-4d34-a03a-d88c10d88623" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/forms.py" afterPath="$PROJECT_DIR$/autist/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/models.py" afterPath="$PROJECT_DIR$/autist/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/templates/adminlte/connect.html" afterPath="$PROJECT_DIR$/autist/templates/adminlte/connect.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/templates/adminlte/lib/_main_sidebar.html" afterPath="$PROJECT_DIR$/autist/templates/adminlte/lib/_main_sidebar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/templates/adminlte/post_in_vk.html" afterPath="$PROJECT_DIR$/autist/templates/adminlte/post_in_vk.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/urls.py" afterPath="$PROJECT_DIR$/autist/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/views.py" afterPath="$PROJECT_DIR$/autist/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/settings.py" afterPath="$PROJECT_DIR$/mysite/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,11 +26,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="828">
+              <caret line="91" column="82" lean-forward="false" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="82" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="connect.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/autist/templates/adminlte/connect.html">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
-              <caret line="91" column="82" lean-forward="true" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="82" />
+              <caret line="42" column="117" lean-forward="false" selection-start-line="42" selection-start-column="100" selection-end-line="42" selection-end-column="117" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="direct.py" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/PycharmProjects/Nomenativ/direct.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -61,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/vk/mixins.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2862">
-              <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+              <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -229,9 +240,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="2592" />
-    <option name="y" value="77" />
+    <option name="y" value="-4" />
     <option name="width" value="930" />
-    <option name="height" value="1112" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -374,7 +385,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/AutoTest/features/nose_tests/DEV_tests/New_Loan/1New_Borrower.py" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/Nomenativ" />
     <property name="SearchEverywhereHistoryKey" value="allow&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -503,7 +514,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2592" y="77" width="1920" height="1084" extended-state="6" />
+    <frame x="1920" y="-4" width="1920" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -573,13 +584,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/autist/templates/account/verified_email_required.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/autist/templates/account/verification_sent.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -783,13 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autist/templates/adminlte/connect.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/autist/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -892,7 +889,7 @@
     <entry file="file://$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/vk/mixins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2862">
-          <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+          <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -935,8 +932,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="91" column="82" lean-forward="false" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autist/templates/adminlte/connect.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
-          <caret line="91" column="82" lean-forward="true" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="82" />
+          <caret line="42" column="117" lean-forward="false" selection-start-line="42" selection-start-column="100" selection-end-line="42" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/Nomenativ/direct.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
