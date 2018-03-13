@@ -63,6 +63,7 @@ INSTALLED_APPS = [
     'phonenumber_field',
     'snowpenguin.django.recaptcha2',
     'tinymce',
+    'taggit',
 ]
 
 
@@ -115,6 +116,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'mysite.urls'
+TAGGIT_CASE_INSENSITIVE  =  True
 
 TEMPLATES = [
     {

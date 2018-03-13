@@ -9,6 +9,8 @@ from uuslug import slugify
 from django.db import models
 from django.contrib.auth.models import User
 from allauth.socialaccount.models import SocialAccount, SocialLogin
+from django.db import models
+from taggit.managers import TaggableManager
 
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
@@ -20,6 +22,7 @@ class Post(models.Model):
     seo_title = models.CharField('Title', blank=True, max_length=250)
     seo_description = models.CharField('Description', blank=True, max_length=250)
     seo_keywords = models.CharField('Keywords', blank=True, max_length=250)
+    tags = TaggableManager()
 
     def publish(self):
         self.published_date = timezone.now()
@@ -58,5 +61,13 @@ class OkPosts(models.Model):
 
 class InPosts(models.Model):
     text = HTMLField(verbose_name=u'Текст записи', blank=True)
+
+class Tasks(models.Model):
+    task = models.CharField(max_length=100, verbose_name="Выберите задание")
+    link = models.URLField(max_length=100, verbose_name="Ссылка")
+    name = models.CharField(max_length=200, verbose_name="Название")
+    coasts = models.CharField(max_length=100, verbose_name="Цена")
+
+
 
 
