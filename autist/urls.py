@@ -5,6 +5,7 @@ from .decorators import check_recaptcha
 
 urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
+    url(r'^tag/(?P<tag_slug>[-\w]+)/$', views.post_list, name='post_list_by_tag'),
     url(r'^post/(?P<slug>[^//]+)/$', views.post_detail, name='post_detail'),
     url(r'^post/new/$', views.post_new, name='post_new'),
     url(r'^post/(?P<slug>[^//]+)/edit/$', views.post_edit, name='post_edit'),

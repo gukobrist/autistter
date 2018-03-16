@@ -22,6 +22,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from allauth.account import app_settings as account_settings
 from allauth.socialaccount.models import SocialToken
+from django.template import RequestContext
+from taggit.models import Tag
 import vk
 import tweepy
 
@@ -67,8 +69,11 @@ class ConnectionsView(AjaxCapableProcessFormViewMixin, FormView):
 
 connections = login_required(ConnectionsView.as_view())
 
-def post_list(request):
+def post_list(request, tag_slug=None):
     posts = Post.objects.filter(created_date__lte=timezone.now()).order_by('-created_date')
+    if tag_slug:
+        tag = get_object_or_404(Tag, slug=tag_slug)
+        posts = posts.filter(tags__in=[tag])
     paginator = Paginator(posts, 10)
     page = request.GET.get('page')
     try:
