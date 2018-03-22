@@ -29,6 +29,7 @@ SECRET_KEY = '@b99vkt-t9n7gwfzo@o-29t(r^+f+ysb%12^4hav+^*!br1vc@'
 ALLOWED_HOSTS = ['*']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -67,7 +68,7 @@ INSTALLED_APPS = [
 ]
 
 
-
+DEBUG = False
 SITE_ID = 1
 LOGIN_URL = '/'
 LOGIN_REDIRECT_URL = "/dashboard/"
