@@ -2,7 +2,89 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d674d08-8699-4d34-a03a-d88c10d88623" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/local_settings.py" afterPath="$PROJECT_DIR$/mysite/local_settings.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/avatars/rmfalx/Au_150px.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/avatars/rmfalx/Au_150px_YVOWQQg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/avatars/rmfalx/resized/100/Au_150px.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/avatars/rmfalx/resized/100/Au_150px_YVOWQQg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/avatars/rmfalx/resized/50/Au_150px.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/avatars/rmfalx/resized/50/Au_150px_YVOWQQg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/avatars/rmfalx/resized/90/Au_150px.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/avatars/rmfalx/resized/90/Au_150px_YVOWQQg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/07/05/hmrdvonuzxs.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/07/07/admin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/07/07/adminka_post.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/07/07/it_worked2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/07/11/new.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/07/14/seo_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/07/14/seo_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/07/25/paginaciya.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/07/26/sharebuttons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/07/26/spoiler.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/12/screenshot-27.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/12/screenshot-28.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/12/screenshot-29.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/12/screenshot-30.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/12/screenshot-31.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/13/console_email.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/13/screenshot-32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/13/screenshot-33.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/19/vk-providers.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/19/vk-providers1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/19/vk-providers2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/19/vk-providers3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/21/12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/22/fb-provider.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/22/fb-provider1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/22/fb-provider2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/22/fb-provider3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/22/fb-provider4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/22/fb-provider5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/22/fb-provider6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/22/fb-provider_jHyBsG0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/22/ins-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/22/ins-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/22/ins-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/22/ins-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/22/odn-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/22/odn-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/22/odn-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/22/tw-provider.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/22/tw-provider1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/22/tw-provider2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/25/profile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/25/profile1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2017/12/29/screenshot-68.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2018/01/09/connect_acc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2018/01/09/connect_acc1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2018/01/09/connect_acc2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2018/01/09/connect_acc3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2018/01/09/scope.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2018/01/24/recaptcha20django.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2018/01/24/recaptchadjango.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2018/01/26/gitignor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2018/01/26/pochta.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2018/01/26/pochta1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2018/01/30/project.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2018/02/09/df_pandas.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2018/02/09/direct_data.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2018/02/09/nosetests.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2018/02/09/pandas_df.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2018/02/09/revers_nose.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2018/02/09/table_revers.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2018/03/13/pageobject.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2018/03/16/djang-tags.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2018/03/16/djang-tags1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2018/03/16/pycharm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/2018/03/22/adminchanges.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/autister/Au.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/autister/Au_1024px.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/autister/Au_1280x720px.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/autister/Au_128x128px.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/autister/Au_150px.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/autister/Au_230x150px.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/media/autister/Au_50x50px.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/settings.py" afterPath="$PROJECT_DIR$/mysite/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,21 +98,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="65" lean-forward="false" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+            <state relative-caret-position="540">
+              <caret line="192" column="21" lean-forward="false" selection-start-line="192" selection-start-column="21" selection-end-line="192" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="local_settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="local_settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/local_settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/autist/templates/autist/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-414">
+              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -40,7 +132,7 @@
         <entry file="file://$PROJECT_DIR$/autist/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="e#24#52#0" expanded="true" />
               </folding>
@@ -51,11 +143,43 @@
       <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/autist/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="30" />
+            <state relative-caret-position="252">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="e#24#56#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/autist/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="1" />
+              <folding>
+                <element signature="e#24#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="15" column="59" lean-forward="false" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="static.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/django/conf/urls/static.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -75,52 +199,8 @@
       <file leaf-file-name="options.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/django/contrib/admin/options.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="490" column="4" lean-forward="false" selection-start-line="490" selection-start-column="4" selection-end-line="490" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/autist/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1044">
-              <caret line="84" column="52" lean-forward="false" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
-              <folding>
-                <element signature="e#24#57#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post_detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/autist/templates/autist/post_detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/autist/templates/autist/post_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-              <folding>
-                <element signature="n#style#0;n#header#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="managers.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/taggit/managers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6354">
-              <caret line="375" column="6" lean-forward="false" selection-start-line="375" selection-start-column="6" selection-end-line="375" selection-end-column="6" />
+            <state relative-caret-position="388">
+              <caret line="494" column="22" lean-forward="true" selection-start-line="494" selection-start-column="22" selection-end-line="494" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -138,7 +218,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>stat</find>
       <find>SERVER_EMAIL</find>
       <find>A_U_T_I_S_</find>
       <find>A_U_T_I</find>
@@ -168,6 +247,7 @@
       <find>response_type=code</find>
       <find>taggit</find>
       <find>ru</find>
+      <find>static</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/</dir>
@@ -231,8 +311,8 @@
         <option value="$PROJECT_DIR$/autist/templates/autist/post_list.html" />
         <option value="$PROJECT_DIR$/autist/admin.py" />
         <option value="$PROJECT_DIR$/autist/models.py" />
-        <option value="$PROJECT_DIR$/mysite/settings.py" />
         <option value="$PROJECT_DIR$/mysite/local_settings.py" />
+        <option value="$PROJECT_DIR$/mysite/settings.py" />
       </list>
     </option>
   </component>
@@ -242,7 +322,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="2592" />
     <option name="y" value="-4" />
     <option name="width" value="930" />
@@ -295,6 +375,19 @@
             <path>
               <item name="site" type="b2602c69:ProjectViewProjectNode" />
               <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="autist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="autist" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="autist" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="autist" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -445,7 +538,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2592" y="-4" width="1922" height="1092" extended-state="6" />
+    <frame x="2592" y="-4" width="1922" height="1092" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -516,13 +609,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/autist/templates/adminlte/lib/_main_header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-680">
-          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/autist/templates/autist/contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -556,13 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="49" column="39" lean-forward="false" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -605,13 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14004">
           <caret line="807" column="12" lean-forward="true" selection-start-line="807" selection-start-column="12" selection-end-line="807" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autist/templates/autist/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="82" />
         </state>
       </provider>
     </entry>
@@ -795,16 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autist/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="82" />
-          <folding>
-            <element signature="e#24#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/autist/templates/autist/post_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
@@ -818,7 +880,7 @@
         <state relative-caret-position="1044">
           <caret line="84" column="52" lean-forward="false" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
           <folding>
-            <element signature="e#24#57#0" expanded="true" />
+            <element signature="e#24#57#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -841,10 +903,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/django/contrib/admin/options.py">
+    <entry file="file://$PROJECT_DIR$/autist/templates/autist/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="490" column="4" lean-forward="false" selection-start-line="490" selection-start-column="4" selection-end-line="490" selection-end-column="4" />
+        <state relative-caret-position="-414">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autist/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autist/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="e#24#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="15" column="59" lean-forward="false" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/django/conf/urls/static.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -859,38 +957,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autist/admin.py">
+    <entry file="file://$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/django/contrib/admin/options.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="30" />
-          <folding>
-            <element signature="e#24#56#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="388">
+          <caret line="494" column="22" lean-forward="true" selection-start-line="494" selection-start-column="22" selection-end-line="494" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/autist/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="e#24#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
+    <entry file="file://$PROJECT_DIR$/mysite/local_settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="65" lean-forward="false" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+        <state relative-caret-position="126">
+          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/local_settings.py">
+    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="540">
+          <caret line="192" column="21" lean-forward="false" selection-start-line="192" selection-start-column="21" selection-end-line="192" selection-end-column="21" />
           <folding />
         </state>
       </provider>

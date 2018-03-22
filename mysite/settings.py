@@ -25,6 +25,7 @@ SECRET_KEY = '@b99vkt-t9n7gwfzo@o-29t(r^+f+ysb%12^4hav+^*!br1vc@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
+
 ALLOWED_HOSTS = ['*']
 
 
@@ -188,8 +189,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-MEDIA_ROOT = BASE_DIR + '/uploads/'
-MEDIA_URL = '/uploads/'
+MEDIA_ROOT = BASE_DIR + '/static/uploads/'
+MEDIA_URL = '/static/uploads/'
 CKEDITOR_UPLOAD_PATH = 'media/'
 
 
