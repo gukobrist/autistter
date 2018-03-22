@@ -13,15 +13,21 @@ from django.db import models
 from taggit.managers import TaggableManager
 
 class Post(models.Model):
+    STATUS_CHOICES = (
+        ('draft', 'Draft'),
+        ('published', 'Published'),
+    )
     author = models.ForeignKey('auth.User')
-    title = models.CharField(max_length=200)
-    slug = models.CharField(verbose_name='Транслит', max_length=200, blank=True)  # Поле для записи ссылки
+    title = models.CharField(max_length=250)
+    slug = models.CharField(verbose_name='Alias', max_length=250, blank=True)
     text = RichTextUploadingField(blank=True, default='')
-    created_date = models.DateTimeField(default=timezone.now)
-    published_date = models.DateTimeField(blank=True, null=True)
-    seo_title = models.CharField('Title', blank=True, max_length=250)
-    seo_description = models.CharField('Description', blank=True, max_length=250)
-    seo_keywords = models.CharField('Keywords', blank=True, max_length=250)
+    created_date = models.DateTimeField(auto_now_add=True)
+    published_date = models.DateTimeField(default=timezone.now)
+    updated = models.DateTimeField(auto_now=True)
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='draft')
+    seo_title = models.CharField('TITLE', blank=True, max_length=250)
+    seo_description = models.CharField('DESCRIPTION', blank=True, max_length=250)
+    seo_keywords = models.CharField('KEYWORDS', blank=True, max_length=250)
     tags = TaggableManager()
 
     def publish(self):
@@ -35,7 +41,7 @@ class Post(models.Model):
         return self.title
 
     def save(self):
-        self.slug = '{0}-{1}'.format(self.pk, slugify(self.title))  # Статья будет отображаться в виде NN-АА-АААА
+        self.slug = '{0}-{1}'.format(self.pk, slugify(self.title))
         super(Post, self).save()
 
 class AddProject(models.Model):
