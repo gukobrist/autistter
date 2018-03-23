@@ -68,7 +68,7 @@ INSTALLED_APPS = [
 ]
 
 
-DEBUG = False
+
 SITE_ID = 1
 LOGIN_URL = '/'
 LOGIN_REDIRECT_URL = "/dashboard/"
@@ -99,6 +99,7 @@ SOCIALACCOUNT_PROVIDERS = {
 }
 
 PREPEND_WWW = False
+
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
