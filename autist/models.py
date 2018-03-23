@@ -12,14 +12,18 @@ from allauth.socialaccount.models import SocialAccount, SocialLogin
 from django.db import models
 from taggit.managers import TaggableManager
 
+class PublishedManager(models.Manager):
+    def get_queryset(self):
+        return super(PublishedManager, self).get_queryset().filter(status='published')
+
 class Post(models.Model):
     STATUS_CHOICES = (
         ('draft', 'Draft'),
         ('published', 'Published'),
     )
-    author = models.ForeignKey('auth.User')
+    author = models.ForeignKey(User, related_name='blog_posts')
     title = models.CharField(max_length=250)
-    slug = models.CharField(verbose_name='Alias', max_length=250, blank=True)
+    slug = models.CharField(verbose_name='Alias', max_length=250, unique_for_date='published_date')
     text = RichTextUploadingField(blank=True, default='')
     created_date = models.DateTimeField(auto_now_add=True)
     published_date = models.DateTimeField(default=timezone.now)
@@ -29,20 +33,14 @@ class Post(models.Model):
     seo_description = models.CharField('DESCRIPTION', blank=True, max_length=250)
     seo_keywords = models.CharField('KEYWORDS', blank=True, max_length=250)
     tags = TaggableManager()
+    objects = models.Manager()
+    published = PublishedManager()
 
-    def publish(self):
-        self.published_date = timezone.now()
-        self.save()
+    class Meta:
+        ordering = ('-published_date',)
 
     def __str__(self):
         return self.title
-
-    def __unicode__(self):
-        return self.title
-
-    def save(self):
-        self.slug = '{0}-{1}'.format(self.pk, slugify(self.title))
-        super(Post, self).save()
 
 class AddProject(models.Model):
     user = models.ForeignKey(User)

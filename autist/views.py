@@ -1,76 +1,20 @@
 # -*- coding: utf-8 -*-
 from django.utils import timezone
 from .models import Post, AddProject
-from allauth.socialaccount.models import SocialAccount
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 from django.shortcuts import redirect
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from allauth.socialaccount.forms import DisconnectForm
 from .forms import ContactForm, AddProjectForm, VkPostsForm, FbPostsForm, TwPostsForm, OkPostsForm, InPostsForm
-from allauth.account.views import (
-    AjaxCapableProcessFormViewMixin,
-    CloseableSignupMixin,
-    RedirectAuthenticatedUserMixin,
-)
-from django.views.generic.edit import FormView
-from allauth.compat import reverse, reverse_lazy
-from allauth.utils import get_form_class
-from allauth.socialaccount import app_settings, helpers
-from allauth.account.adapter import get_adapter as get_account_adapter
-from django.contrib import messages
-from django.contrib.auth.decorators import login_required
-from allauth.account import app_settings as account_settings
 from allauth.socialaccount.models import SocialToken
-from django.template import RequestContext
 from taggit.models import Tag
 import vk
 import tweepy
 
 
-
-class ConnectionsView(AjaxCapableProcessFormViewMixin, FormView):
-    template_name = (
-        "adminlte/index."  +
-        account_settings.TEMPLATE_EXTENSION)
-    form_class = AddProjectForm
-    success_url = reverse_lazy("projects")
-
-    def get_form_class(self):
-        return get_form_class(app_settings.FORMS,
-                              'account_list',
-                              self.form_class)
-
-    def get_form_kwargs(self):
-        kwargs = super(ConnectionsView, self).get_form_kwargs()
-        kwargs["request"] = self.request
-        return kwargs
-
-    def form_valid(self, form):
-        get_account_adapter().add_message(self.request,
-                                          messages.INFO,
-                                          'socialaccount/messages/'
-                                          'account_disconnected.txt')
-        form.save()
-        return super(ConnectionsView, self).form_valid(form)
-
-    def get_ajax_data(self):
-        account_data = []
-        for account in SocialAccount.objects.filter(user=self.request.user):
-            provider_account = account.get_provider_account()
-            account_data.append({
-                'id': account.pk,
-                'provider': account.provider,
-                'name': provider_account.to_str()
-            })
-        return {
-            'projects': account_data
-        }
-
-connections = login_required(ConnectionsView.as_view())
-
 def post_list(request, tag_slug=None):
-    posts = Post.objects.filter(created_date__lte=timezone.now()).order_by('-created_date')
+    posts = Post.published.all()
     if tag_slug:
         tag = get_object_or_404(Tag, slug=tag_slug)
         posts = posts.filter(tags__in=[tag])
