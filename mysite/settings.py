@@ -29,7 +29,6 @@ SECRET_KEY = '@b99vkt-t9n7gwfzo@o-29t(r^+f+ysb%12^4hav+^*!br1vc@'
 ALLOWED_HOSTS = ['*']
 
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -98,7 +97,6 @@ SOCIALACCOUNT_PROVIDERS = {
     }
 }
 
-PREPEND_WWW = False
 
 
 AUTHENTICATION_BACKENDS = [
@@ -191,8 +189,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-MEDIA_ROOT = BASE_DIR + '/static/uploads/'
-MEDIA_URL = '/static/uploads/'
+MEDIA_ROOT = BASE_DIR + '/uploads/'
+MEDIA_URL = '/uploads/'
 CKEDITOR_UPLOAD_PATH = 'media/'
 
 
