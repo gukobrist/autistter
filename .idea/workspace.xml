@@ -1,95 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d674d08-8699-4d34-a03a-d88c10d88623" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/avatars/rmfalx/Au_150px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/avatars/rmfalx/Au_150px_YVOWQQg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/avatars/rmfalx/resized/100/Au_150px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/avatars/rmfalx/resized/100/Au_150px_YVOWQQg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/avatars/rmfalx/resized/50/Au_150px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/avatars/rmfalx/resized/50/Au_150px_YVOWQQg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/avatars/rmfalx/resized/90/Au_150px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/avatars/rmfalx/resized/90/Au_150px_YVOWQQg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/07/05/hmrdvonuzxs.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/07/07/admin.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/07/07/adminka_post.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/07/07/it_worked2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/07/11/new.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/07/14/seo_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/07/14/seo_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/07/25/paginaciya.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/07/26/sharebuttons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/07/26/spoiler.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/12/screenshot-27.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/12/screenshot-28.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/12/screenshot-29.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/12/screenshot-30.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/12/screenshot-31.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/13/console_email.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/13/screenshot-32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/13/screenshot-33.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/19/vk-providers.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/19/vk-providers1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/19/vk-providers2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/19/vk-providers3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/21/12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/22/fb-provider.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/22/fb-provider1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/22/fb-provider2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/22/fb-provider3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/22/fb-provider4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/22/fb-provider5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/22/fb-provider6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/22/fb-provider_jHyBsG0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/22/ins-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/22/ins-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/22/ins-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/22/ins-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/22/odn-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/22/odn-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/22/odn-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/22/tw-provider.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/22/tw-provider1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/22/tw-provider2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/25/profile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/25/profile1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2017/12/29/screenshot-68.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/01/09/connect_acc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/01/09/connect_acc1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/01/09/connect_acc2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/01/09/connect_acc3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/01/09/scope.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/01/24/recaptcha20django.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/01/24/recaptchadjango.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/01/26/gitignor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/01/26/pochta.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/01/26/pochta1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/01/30/project.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/02/09/df_pandas.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/02/09/direct_data.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/02/09/nosetests.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/02/09/pandas_df.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/02/09/revers_nose.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/02/09/table_revers.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/03/13/pageobject.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/03/16/djang-tags.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/03/16/djang-tags1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/03/16/pycharm.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/03/22/adminchanges.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/2018/03/23/45.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/autister/Au.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/autister/Au_1024px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/autister/Au_1280x720px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/autister/Au_128x128px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/autister/Au_150px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/autister/Au_230x150px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/uploads/media/autister/Au_50x50px.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autist/templates/autist/contact.html" afterPath="$PROJECT_DIR$/autist/templates/autist/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/local_settings.py" afterPath="$PROJECT_DIR$/mysite/local_settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/settings.py" afterPath="$PROJECT_DIR$/mysite/settings.py" />
-    </list>
+    <list default="true" id="9d674d08-8699-4d34-a03a-d88c10d88623" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="193" column="24" lean-forward="false" selection-start-line="193" selection-start-column="24" selection-end-line="193" selection-end-column="24" />
+            <state relative-caret-position="375">
+              <caret line="192" column="13" lean-forward="true" selection-start-line="192" selection-start-column="13" selection-end-line="192" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -132,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="local_settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="local_settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/local_settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="216">
+              <caret line="12" column="65" lean-forward="true" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -156,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/mysite/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+              <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -399,7 +311,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Projects/fbs_pytest" />
     <property name="SearchEverywhereHistoryKey" value="allow&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -942,26 +854,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/local_settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="193" column="24" lean-forward="false" selection-start-line="193" selection-start-column="24" selection-end-line="193" selection-end-column="24" />
+        <state relative-caret-position="375">
+          <caret line="192" column="13" lean-forward="true" selection-start-line="192" selection-start-column="13" selection-end-line="192" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/local_settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="65" lean-forward="true" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
           <folding />
         </state>
       </provider>
