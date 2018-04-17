@@ -11,6 +11,8 @@ from allauth.socialaccount.models import SocialToken
 from taggit.models import Tag
 import vk
 import tweepy
+from django.core.mail import send_mail
+from mysite import local_settings
 
 
 def post_list(request, tag_slug=None):
@@ -31,6 +33,22 @@ def post_list(request, tag_slug=None):
 def post_detail(request, slug):
     post = get_object_or_404(Post, slug=slug)
     return render(request, 'autist/post_detail.html', {'post': post})
+
+def page_contact(request):
+    sent = False
+    mailfrom = local_settings.EMAIL_HOST_USER
+    mailto = [local_settings.EMAIL_HOST_USER]
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            cd = form.cleaned_data
+            subject = 'Autister - Новое письмо от {}'.format(cd['name'])
+            message = 'Прислал {}. Пишет: {}'.format(cd['email'], cd['message'])
+            send_mail(subject, message, mailfrom, mailto)
+            sent = True
+    else:
+        form = ContactForm()
+    return render(request, 'autist/contact.html', {'form': form, 'sent': sent})
 
 def post_new(request):
     if request.method == "POST":
@@ -166,23 +184,6 @@ def post_in_in(request):
     return render(request, 'adminlte/post_in_in.html', {'form': form, 'access_token': access_token})
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-def page_contact(request):
-    form = ContactForm(request.POST)
-    if request.recaptcha_is_valid:
-        pass
-    return render(request, 'autist/contact.html', {'form': form})
 
 def page_about(request):
     return render(request, 'autist/about.html')

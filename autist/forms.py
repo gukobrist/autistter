@@ -15,18 +15,7 @@ class PostForm(forms.ModelForm):
 class ContactForm (forms.Form):
     name = forms.CharField(max_length=30)
     email = forms.EmailField(max_length=254)
-    phone = PhoneNumberField(max_length=30)
-    message = forms.CharField(max_length=2000, widget=forms.Textarea(), help_text='Напиши мне')
-    source = forms.CharField(max_length=50, widget=forms.HiddenInput())
-
-    def clean(self):
-        cleaned_data = super(ContactForm, self).clean()
-        name = cleaned_data.get('name')
-        email = cleaned_data.get('email')
-        phone = cleaned_data.get('phone')
-        message = cleaned_data.get('message')
-        if not name and not email and not message:
-            raise forms.ValidationError('You have to write something!')
+    message = forms.CharField(max_length=2000, widget=forms.Textarea, required=True)
 
 class AddProjectForm(forms.ModelForm):
     accounts = forms.ModelMultipleChoiceField(queryset=SocialAccount.objects.all(),
