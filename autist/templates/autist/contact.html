@@ -1,7 +1,7 @@
 {% extends 'autist/base.html' %}
 {% load staticfiles %}
 {% load bootstrap_tags %}
-{% load bootstrap %}
+
 {% block headimg %}
 <header class="intro-header" style="background-image: url({% static 'blog/img/post-sample-image.jpg' %})">
 {% endblock %}
@@ -14,6 +14,15 @@
 
 {% block content1 %}
      <div class="post-preview">
+         {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+                {{ message }}
+                </li>
+                {% endfor %}
+            </ul>
+         {% endif %}
      {% if sent %}
         <h1>Письмо отправленно!</h1>
         <p>
@@ -24,9 +33,12 @@
             <form method="POST" class="post-form"  action=".">
                 {% csrf_token %}
                 {{ form|as_bootstrap }}
+                <script src='https://www.google.com/recaptcha/api.js'></script>
+                <div class="g-recaptcha" data-sitekey="6LfnxkAUAAAAAIfp98JhTJfJE4TtD85mi-TZe7W3"></div>
                 <button type="submit" class="btn btn-default btn-sm">Отправить</button>
             </form>
         </div>
      {% endif %}
+
      </div>
 {% endblock %}

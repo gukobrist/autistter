@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-from django import forms
 from .models import Post, AddProject, VkPosts, FbPosts, TwPosts, OkPosts, InPosts
-from phonenumber_field.modelfields import PhoneNumberField
 from django import forms
 from allauth.socialaccount.models import SocialAccount
 
@@ -16,6 +14,7 @@ class ContactForm (forms.Form):
     name = forms.CharField(max_length=30)
     email = forms.EmailField(max_length=254)
     message = forms.CharField(max_length=2000, widget=forms.Textarea, required=True)
+
 
 class AddProjectForm(forms.ModelForm):
     accounts = forms.ModelMultipleChoiceField(queryset=SocialAccount.objects.all(),

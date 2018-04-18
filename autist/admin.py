@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.contrib import admin
-from .models import Post
+from .models import Post, Comment
 from metatags.admin import MetaTagInline
 
 

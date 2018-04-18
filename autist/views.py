@@ -10,9 +10,12 @@ from .forms import ContactForm, AddProjectForm, VkPostsForm, FbPostsForm, TwPost
 from allauth.socialaccount.models import SocialToken
 from taggit.models import Tag
 import vk
+import urllib
+import json
 import tweepy
 from django.core.mail import send_mail
 from mysite import local_settings
+from django.contrib import messages
 
 
 def post_list(request, tag_slug=None):
@@ -41,11 +44,27 @@ def page_contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            cd = form.cleaned_data
-            subject = 'Autister - Новое письмо от {}'.format(cd['name'])
-            message = 'Прислал {}. Пишет: {}'.format(cd['email'], cd['message'])
-            send_mail(subject, message, mailfrom, mailto)
-            sent = True
+
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': local_settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.parse.urlencode(values).encode()
+            req =  urllib.request.Request(url, data=data)
+            response = urllib.request.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
+            if result['success']:
+                cd = form.cleaned_data
+                subject = 'Autister - Новое письмо от {}'.format(cd['name'])
+                message = 'Прислал {}. Пишет: {}'.format(cd['email'], cd['message'])
+                send_mail(subject, message, mailfrom, mailto)
+                sent = True
+            else:
+                messages.error(request, 'reCAPTCHA не пройдена. Нужно пройти!')
     else:
         form = ContactForm()
     return render(request, 'autist/contact.html', {'form': form, 'sent': sent})
